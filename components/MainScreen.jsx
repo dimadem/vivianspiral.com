@@ -4,13 +4,13 @@ import PerformanceCard from "./PerformanceCard";
 
 export default function MainScreen() {
   return (
-    <main>
+    <div className="flex flex-col w-full h-full animate-fade-in-down">
       <Header />
-      <div className="container">
-        performance slider
+
+      <div className="flex flex-col w-screen">
         <PerformanceCard />
       </div>
       <Footer />
-    </main>
+    </div>
   );
 }

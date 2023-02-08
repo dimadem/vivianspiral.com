@@ -3,8 +3,9 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import WelcomeScreen from "../components/WelcomeScreen";
+import VideoBackground from "@/components/VideoBackground";
 
-const ScreenData = dynamic(() => import("../components/MainScreen"));
+const MainScreen = dynamic(() => import("../components/MainScreen"));
 
 export default function Home() {
   const [loading, setIsLoading] = useState(true);
@@ -14,9 +15,16 @@ export default function Home() {
     if (loading === true) {
       setTimeout(() => {
         setIsLoading(false);
-      }, 5000);
+      }, 6000);
     }
   }, [loading]);
 
-  return <>{loading ? <WelcomeScreen /> : <ScreenData />}</>;
+  return (
+    <>
+      {loading ? <WelcomeScreen /> : <MainScreen />}
+      <div className="flex flex-col animate-fade-in-up">
+        <VideoBackground />
+      </div>
+    </>
+  );
 }

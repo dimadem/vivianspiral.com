@@ -1,7 +1,10 @@
+import Image from "next/image";
+import logo from "public/logo.png";
+
 export default function Logo(params) {
   return (
     <div className="logo">
-      <img src="assets/logo.svg" alt="Logo" />
+      <Image src={logo} alt="Logo" width={180} height={84} />
     </div>
   );
 }
