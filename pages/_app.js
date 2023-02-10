@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { Spectral, Montaga } from "@next/font/google";
 
 export const spectral = Spectral({
-  weight: "400",
+  weight: ["200", "300", "400"],
   //   style: "normal",
   subsets: ["latin"],
   //   preload: true,

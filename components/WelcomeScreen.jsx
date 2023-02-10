@@ -13,18 +13,22 @@ export default function WelcomeScreen(params) {
   }, []);
 
   return (
-    <div className="flex flex-col justify-between items-center h-screen p-5">
-      <div className="flex flex-col h-full justify-center w-80 sm:w-full">
-        <h1 className={`text-center animate-fade-in-up ${first}`}>
-          PIONEER IN HULA-HOOP DANCE AND FLOW ARTS
-        </h1>
-        <h1 className={`text-center animate-fade-in-up ${second}`}>
-          BLENDING DANCE, CIRCUS, ACROBATICS, OBJECT MANIPULATION <br /> AND
-          STORYTELLING TO MOVE AUDIENCES WORLDWIDE
-        </h1>
-      </div>
-      <div className="flex flex-col h-full w-full justify-center">
-        <SoundButtons />
+    <div className="flex flex-col justify-center items-center w-full">
+      <div className="relative z-30 flex flex-col justify-between items-center w-80 sm:min-w-full min-h-screen">
+        <div className="mt-44">
+          <h1 className={`uppercase text-center animate-fade-in-up ${first}`}>
+            Pioneer of
+            <br /> Hula Hoop Dance
+            <br /> and Flow Arts
+          </h1>
+          <h1 className={`uppercase text-center animate-fade-in-up ${second}`}>
+            Blending Dance, Circus, Acrobatics, Object Manipulation,
+            <br /> and Storytelling to Move Audiences Worldwide
+          </h1>
+        </div>
+        <div className="min-h-full mb-48">
+          <SoundButtons />
+        </div>
       </div>
     </div>
   );

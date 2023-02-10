@@ -16,22 +16,29 @@ export default function VideoBackground() {
   return (
     <>
       {isSSR ? null : (
-        <ReactPlayer
-          key={videoUrl}
-          url={videoUrl}
-          width="100%"
-          height="100%"
-          playing={true}
-          controls={false}
-          volume={1}
-          muted={true}
-          style={{
-            position: "absolute",
-            top: 0,
-            objectFit: "cover",
-            zIndex: -1,
-          }}
-        />
+        <div className=" justify-center min-w-full min-h-screen z-0 flex absolute animate-fade-in-up">
+          <ReactPlayer
+            key={videoUrl}
+            url={videoUrl}
+            playing={true}
+            width="100%"
+            height="100vh"
+            loop={true}
+            controls={false}
+            volume={1}
+            muted={true}
+            style={{
+              position: "absolute",
+              top: 0,
+              bottom: 0,
+              zIndex: 0,
+              width: "100%",
+              height: "100vh !important",
+              objectFit: "cover",
+              opacity: 0.8,
+            }}
+          />
+        </div>
       )}
     </>
   );

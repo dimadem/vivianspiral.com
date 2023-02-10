@@ -21,8 +21,8 @@ export default function Home() {
 
   return (
     <>
-      {loading ? <WelcomeScreen /> : <MainScreen />}
-      <div className="flex flex-col animate-fade-in-up">
+      <div className="relative flex flex-col justify-start items-start min-w-full min-h-screen p-0">
+        {loading ? <WelcomeScreen /> : <MainScreen />}
         <VideoBackground />
       </div>
     </>
