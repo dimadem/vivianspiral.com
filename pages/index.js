@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import WelcomeScreen from "../components/WelcomeScreen";
 import VideoBackground from "@/components/VideoBackground";
 
-const MainScreen = dynamic(() => import("../components/MainScreen"));
+const SliderScreen = dynamic(() => import("../components/SliderScreen"));
 
 export default function Home() {
   const [loading, setIsLoading] = useState(true);
@@ -21,10 +21,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-start items-start min-w-full min-h-screen p-0">
-        {loading ? <WelcomeScreen /> : <MainScreen />}
-        <VideoBackground />
-      </div>
+      {loading ? <WelcomeScreen /> : <SliderScreen />}
+      <VideoBackground />
     </>
   );
 }

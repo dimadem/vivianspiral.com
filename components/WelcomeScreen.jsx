@@ -13,8 +13,8 @@ export default function WelcomeScreen(params) {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-      <div className="relative z-30 flex flex-col justify-between items-center w-80 sm:min-w-full min-h-screen">
+    <div className="relative z-30 w-screnn h-screen">
+      <div className="w-80 sm:min-w-full">
         <div className="mt-44">
           <h1 className={`uppercase text-center animate-fade-in-up ${first}`}>
             Pioneer of
