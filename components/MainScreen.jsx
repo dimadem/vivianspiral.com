@@ -9,7 +9,7 @@ export default function MainScreen() {
       <div className="z-30 flex flex-col w-full h-full items-start animate-fade-in-down snap-y snap-mandatory overflow-scroll">
         <div className="top-0 w-screen h-screen snap-start">
           <Header />
-          <div className="flex flex-col snap-x w-full sm:h-[780px] h-96 p-2">
+          <div className="flex flex-col w-full h-[780px] md:h-[780px] lg:h-[780px] p-2">
             <PerformanceCard
               header={performances[0].header}
               body={performances[0].description}
