@@ -6,18 +6,20 @@ import { performances } from "../public/performances.js";
 export default function MainScreen() {
   return (
     <>
-      <div className="z-30 flex flex-col w-full h-full items-start animate-fade-in-down snap-y snap-mandatory overflow-scroll">
+      <div className="relative z-30 flex flex-col w-full h-full items-start animate-fade-in-down">
         <div className="top-0 w-screen h-screen snap-start">
           <Header />
-          <div className="flex flex-col w-full h-[780px] md:h-[780px] lg:h-[780px] p-2">
-            <PerformanceCard
-              header={performances[0].header}
-              body={performances[0].description}
-              footer={performances[0].footer}
-            />
+          <div className="relative flex flex-row w-fit h-[820px] md:h-[760px] lg:h-[760px] p-2 overflow-x-scroll overflow-hidden snap-x">
+            {performances.map((performance) => (
+              <PerformanceCard
+                header={performance.header}
+                body={performance.description}
+                footer={performance.footer}
+              />
+            ))}
           </div>
         </div>
-        <div className="w-screen h-screen snap-start">
+        <div className="w-screen h-screen">
           <div className="flex flex-col flex-wrap  text-3xl text-center">
             INSTAGRAM FACEBOOK YOUTUBE INSTAGRAM FACEBOOK YOUTUBE INSTAGRAM
             FACEBOOK YOUTUBE INSTAGRAM FACEBOOK YOUTUBE INSTAGRAM FACEBOOK

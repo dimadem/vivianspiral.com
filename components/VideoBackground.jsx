@@ -16,7 +16,7 @@ export default function VideoBackground() {
   return (
     <>
       {isSSR ? null : (
-        <div className=" justify-center min-w-full min-h-screen z-0 flex absolute animate-fade-in-up">
+        <div className=" absolute min-w-screen min-h-screen animate-fade-in-up">
           <ReactPlayer
             key={videoUrl}
             url={videoUrl}
@@ -28,12 +28,11 @@ export default function VideoBackground() {
             volume={1}
             muted={true}
             style={{
-              position: "absolute",
+              position: "relative",
               top: 0,
-              bottom: 0,
               zIndex: 0,
-              width: "100%",
-              height: "100vh !important",
+              // width: "100%",
+              // height: "100vh",
               objectFit: "cover",
               opacity: 0.8,
             }}

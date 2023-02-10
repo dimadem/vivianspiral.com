@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { Spectral, Montaga } from "@next/font/google";
+import { useEffect } from "react";
 
 export const spectral = Spectral({
   weight: ["200", "300", "400"],
@@ -18,6 +19,12 @@ export const montaga = Montaga({
 });
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    const use = async () => {
+      (await import("tw-elements")).default;
+    };
+    use();
+  }, []);
   return (
     <main className={`${spectral.variable} ${montaga.variable}`}>
       <Component {...pageProps} />

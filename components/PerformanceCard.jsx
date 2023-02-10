@@ -8,29 +8,36 @@ import {
 import { useState } from "react";
 
 export default function PerformanceCard({ header, body, footer }) {
-  const [openDescription, setOpenDescription] = useState(false);
+  // hide description
+  const [openDescription, setOpenDescription] = useState(true);
+  const hide = openDescription ? "hidden" : "block";
+
   return (
-    <div className="flex flex-col h-full justify-start items-center pt-5 pb-20 space-y-8">
+    <div className="flex flex-col w-screen h-full justify-start items-center pt-5 pb-20 space-y-8 snap-center">
       <h1>{header}</h1>
       <div className="flex flex-row w-full h-full">
         <button className="">
           <BsCaretLeft size={40} />
         </button>
-        <p className="flex flex-col w-full h-full justify-end font-montagaText text-xl text-justify">
-          {body}
-        </p>
+        <div className="flex flex-col w-full h-full justify-end">
+          <p
+            className={`${hide} font-montagaText text-xl text-justify animate-fade-in-up`}
+          >
+            {body}
+          </p>
+        </div>
         <button>
           <BsCaretRight size={40} />
         </button>
       </div>
       <div className="flex flex-row w-full items-start justify-evenly">
         {openDescription ? (
-          <button>
-            <BsArrowDownCircle size={32} />
+          <button onClick={() => setOpenDescription(false)}>
+            <BsArrowUpCircle size={32} />
           </button>
         ) : (
-          <button>
-            <BsArrowUpCircle size={32} />
+          <button onClick={() => setOpenDescription(true)}>
+            <BsArrowDownCircle size={32} />
           </button>
         )}
         <button>

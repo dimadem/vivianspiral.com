@@ -5,10 +5,10 @@ import IconFrame from "./ui/IconFrame";
 // https://tailwindui.com/components/application-ui/navigation/navbars
 export default function MainMenu(params) {
   const navigation = [
-    { name: "Dashboard", href: "#", current: true },
-    { name: "Team", href: "#", current: false },
-    { name: "Projects", href: "#", current: false },
-    { name: "Calendar", href: "#", current: false },
+    { name: "ABOUT ME", href: "aboutme", current: true },
+    { name: "IMAGES", href: "#", current: false },
+    { name: "VIDEOS", href: "#", current: false },
+    { name: "LEARN", href: "#", current: false },
   ];
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
