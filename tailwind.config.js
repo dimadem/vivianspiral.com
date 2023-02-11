@@ -1,3 +1,4 @@
+const colors = require("tailwindcss/colors");
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} \*/
@@ -8,6 +9,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      white: colors.white,
+      primary: "#e5e7eb", //gray-200
+    },
     extend: {
       fontFamily: {
         montagaText: ["var(--font-montaga)", ...fontFamily.sans],

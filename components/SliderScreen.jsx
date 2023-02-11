@@ -8,7 +8,7 @@ export default function SliderScreen() {
   return (
     <>
       <Header />
-      <div className="w-screen lg:h-[720px] h-[760px]">
+      <div className="w-screen  h-[760px]">
         <Carousel
           leftControl={<BsCaretLeft size={40} />}
           rightControl={<BsCaretRight size={40} />}
