@@ -18,6 +18,13 @@
   h4 {
     @apply text-lg sm:text-xl uppercase font-spectralHeader;
   }
+  h5 {
+    @apply text-base sm:text-lg uppercase font-spectralHeader;
+  }
+  h6 {
+    @apply text-sm sm:text-base uppercase font-spectralHeader;
+  }
+
   /* video {
     @apply w-full h-full;
   } */

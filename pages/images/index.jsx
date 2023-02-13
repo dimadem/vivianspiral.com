@@ -1,45 +1,46 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import { Accordion, Carousel } from "flowbite-react";
-import { performances } from "../../public/performances.js";
+import { performances } from "../../public/data.js";
 import Image from "next/image";
 import { HiOutlineArrowCircleDown } from "react-icons/hi";
+import NavBar from "@/components/NavBar.jsx";
+import Footer from "@/components/Footer";
 
 export default function Images(params) {
   return (
     <>
-      <Header />
-      {/* <div className="h-[760px] bg-gray-200 w-full"> */}
-      <Accordion
-        arrowIcon={HiOutlineArrowCircleDown}
-        collapseAll={true}
-        alwaysOpen={true}
-        flush={true}
-      >
-        {performances.map((performance, index) => (
-          <Accordion.Panel key={index} className="h-[600px]">
-            <Accordion.Title className="text-primary">
-              {performance.header}
-            </Accordion.Title>
-            <Accordion.Content className="h-[600px]">
-              <div className="h-[540px]">
-                <Carousel>
+      <NavBar>
+        <div className="h-screen w-full">
+          {performances.map((performance, index) => (
+            <div tabIndex={index} className="collapse group">
+              <div className="collapse-title font-spectralHeader text-xl">
+                <div className="flex flex-row justify-between">
+                  {performance.header}
+                  <HiOutlineArrowCircleDown />
+                </div>
+              </div>
+              <div className="collapse-content group-focus:text-secondary-content justify-center">
+                {/* CAROUSEL */}
+                <div className="carousel carousel-center p-4 space-x-4 rounded-box">
                   {performance.images.map((image, index) => (
                     <div
                       key={index}
-                      className="flex justify-center w-full h-fit"
+                      className="relative carousel-item h-fit w-fit"
                     >
-                      <Image src={image.url} alt={`image + ${index}`} />
+                      <Image
+                        src={image.url}
+                        alt={`image + ${index}`}
+                        width="50%"
+                        height="50%"
+                      />
                     </div>
                   ))}
-                </Carousel>
+                </div>
               </div>
-            </Accordion.Content>
-          </Accordion.Panel>
-        ))}
-      </Accordion>
-      {/* </div> */}
-      <Footer />
+            </div>
+          ))}
+        </div>
+        {/* //todo ADD FOOTER */}
+        {/* <Footer /> */}
+      </NavBar>
     </>
   );
 }

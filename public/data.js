@@ -1,3 +1,17 @@
+//! NAVBAR
+export const navigation = [
+  { name: "ABOUT ME", href: "/aboutme", current: false, target: "" },
+  { name: "IMAGES", href: "/images", current: false, target: "" },
+  { name: "VIDEOS", href: "/videos", current: false, target: "" },
+  {
+    name: "LEARN",
+    href: "https://spiralcircusarts.bigcartel.com/",
+    current: false,
+    target: "_blank",
+  },
+];
+
+//! PERFORMANCES
 export const performances = [
   {
     header: "Hoop Dance",
@@ -81,5 +95,39 @@ export const performances = [
       { url: require("./images/Fire_Performance/4.jpg") },
       { url: require("./images/Fire_Performance/5.jpg") },
     ],
+  },
+];
+
+//! TESTIMONIALS in ABOUTME
+export const testimonials = [
+  {
+    id: "item1",
+    text: "Spiral is a true artist, she has a style of performance unlike anything I have ever seen. Unique, hard working, and a talent that is miles above the rest. It is refreshing to see a performer that has a style that cannot be compared with anything out there. If you want to see something new, different and out of the ordinary, hire Spiral. Her performance is unique, high class, and powerful. Highly spiritual and entertaining at the same time.",
+    company: "Cirque du Soleil",
+    autor: "Karl Baumann - principal character and movement coach",
+  },
+  {
+    id: "item2",
+    text: "You were obviously the hit of the night and I hope you enjoyed yourself as much as our guests enjoyed your performance, thanks for being so helpful… you went over and above the call of duty and added such a unique angle to the whole evening.",
+    company: "New York Academy of Art",
+    autor: "Sean Mearns on behalf of Art's Tribeca Ball",
+  },
+  {
+    id: "item3",
+    text: "In my 35 years of professional performance and entertainment work, I don't know of any Artist I would recommend more highly for any venue than Spiral for her combination of technical expertise, magical presence and courageous artistry.",
+    company: "Omimeo Mime Theater",
+    autor: "Hardin Minor - Artistic Director",
+  },
+  {
+    id: "item4",
+    text: "As a producer, director, talent buyer/coordinator and a booking agent, I have the opportunity to work with many different artists, in many different genres, from all different skill levels. It's not often that I encounter an artist who is consistently a 'highlight' of any show that I have produced that she has been a part of. Spiral is one of those types of artists. Not only is she a consummate professional, but she is also a very pleasant person to be around and an artist who is easy to work with. These are all qualities that I seek when selecting performers to be a part of my productions. I include Spiral in the majority of proposals for Variety Shows that I am working on, as I know that she will not only 'deliver the goods' on stage, but she will do so in a positively radiant way, and in the process will enchant and charm the entire audience. I  have used her talents for all kinds of crowds, from all adult Corporate events,to some of the more 'Family' types of shows. I can say that without a doubt, she will amaze and hypnotize people from 9 months to 90 years old. If you want to create a memorable show and one that will amaze, enchant, mesmerize and entertain your audience, then you NEED to book Spiral and make her a part of your show, event, or production.",
+    company: "Fettucini Entertainment",
+    autor: "Steve Langley - Director, Producer, and President",
+  },
+  {
+    id: "item5",
+    text: "Spiral is a whirling dervish of beauty. A true artist that transcends your idea of hula hooping. The look in the audience's eyes when she hits the stage is a real treat. I look forward to Spiral's performances every year.",
+    company: "Across the Way Productions",
+    autor: "Kris Hodges-FloydFest - Producer, Director",
   },
 ];

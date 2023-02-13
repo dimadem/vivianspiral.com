@@ -1,17 +1,24 @@
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Footer(params) {
   return (
-    <footer className="flex flex-row justify-evenly p-5 w-full">
-      <button>
-        <BsFacebook size={40} />
-      </button>
-      <button>
-        <BsInstagram size={40} />
-      </button>
-      <button>
-        <BsYoutube size={40} />
-      </button>
+    <footer className="footer flex flex-col items-center p-4 bg-neutral text-neutral-content">
+      <div className="items-center grid-flow-col">
+        <p>Vivian Spiral © 2023 - All right reserved</p>
+      </div>
+      <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <Link href="https://www.facebook.com/vivianspiral" target="_blank">
+          <BsFacebook size={25} />
+        </Link>
+        <Link href="https://www.instagram.com/vivianspiral" target="_blank">
+          <BsInstagram size={25} />
+        </Link>
+
+        <Link href="https://www.youtube.com/@spiraldancer" target="_blank">
+          <BsYoutube size={25} />
+        </Link>
+      </div>
     </footer>
   );
 }

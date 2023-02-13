@@ -20,9 +20,9 @@ export default function Home() {
   }, [loading]);
 
   return (
-    <>
+    <div>
       {loading ? <WelcomeScreen /> : <SliderScreen />}
-      <VideoBackground />
-    </>
+      {/* <VideoBackground /> */}
+    </div>
   );
 }

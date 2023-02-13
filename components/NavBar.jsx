@@ -1,79 +1,144 @@
-import { BsEnvelope, BsWhatsapp, BsCloudDownload } from "react-icons/bs";
+import {
+  BsEnvelope,
+  BsWhatsapp,
+  BsCloudDownload,
+  BsList,
+} from "react-icons/bs";
 import logo from "public/logo.png";
 import Image from "next/image";
-import { Navbar, Tooltip } from "flowbite-react";
+import Link from "next/link";
+import Footer from "./Footer";
+import { navigation } from "@/public/data";
 
-export default function NavBar(params) {
-  const navigation = [
-    { name: "ABOUT ME", href: "/aboutme", current: false, target: "" },
-    { name: "IMAGES", href: "/images", current: false, target: "" },
-    { name: "VIDEOS", href: "/videos", current: false, target: "" },
-    {
-      name: "LEARN",
-      href: "https://spiralcircusarts.bigcartel.com/",
-      current: false,
-      target: "_blank",
-    },
-  ];
-
+export default function NavBar({ children }) {
   return (
-    <Navbar fluid={true} rounded={false} className="relative bg-transparent">
-      <Navbar.Brand href="/">
-        <Image
-          src={logo}
-          className="mr-3 h-9 sm:h-9 w-fit"
-          alt="Vivian Spiral Logo"
-        />
-      </Navbar.Brand>
-      <Navbar.Toggle className="bg-transparent hover:bg-transparent rounded-none hover:rounded-none sm:hover:rounded-none" />
-      <Navbar.Collapse className="text-right font-spectralHeader text-xl hover:text-white md:hover:text-white">
-        {navigation.map((item, index) => (
-          <Navbar.Link
-            id={index}
-            key={index}
-            href={item.href}
-            active={item.current}
-            target={item.target}
-            className="text-primaty md:text-gray-200 text-xl  hover:text-white md:hover:text-white"
-          >
-            {item.name}
-          </Navbar.Link>
-        ))}
+    <div className="drawer">
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <div className="drawer-content flex flex-col">
+        {/* <!-- Navbar --> */}
+        <div className="w-full navbar">
+          <div className="navbar-start p-2 mx-2">
+            <Link href="/">
+              <Image
+                src={logo}
+                className="mr-3 h-9 sm:h-11 w-fit"
+                alt="Vivian Spiral Logo"
+              />
+            </Link>
+          </div>
+          <div className="flex-none lg:hidden navbar-end">
+            <label htmlFor="my-drawer-3" className="btn btn-square">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="inline-block w-6 h-6 stroke-current"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
 
-        {/* CONTACT */}
-        <h3 className="p-2 sm:hidden pt-6">CONTACT</h3>
-        <Navbar.Link
-          id="mail"
-          href="email"
-          className="text-gray-200 md:text-gray-200  hover:text-white md:hover:text-white flex justify-end"
-        >
-          <Tooltip content="e-mail" style="light" arrow="false">
-            <BsEnvelope size={35} />
-          </Tooltip>
-        </Navbar.Link>
-        {/* WHATSAPP */}
-        <Navbar.Link
-          id="whatsapp"
-          href="https://wa.me/15103094860"
-          className="text-gray-200 md:text-gray-200  hover:text-white md:hover:text-white flex justify-end"
-        >
-          <Tooltip content="WhatsApp" style="light" arrow="false">
-            <BsWhatsapp size={30} />
-          </Tooltip>
-        </Navbar.Link>
+          <div className="flex-2 hidden lg:block">
+            <ul className="menu menu-horizontal">
+              {/* <!-- Navbar menu content here --> */}
+              <div className="btn-group">
+                {navigation.map((item, index) => (
+                  <Link
+                    className="btn btn-ghost px-8 font-spectralHeader text-lg"
+                    href={item.href}
+                    id={index}
+                    key={index}
+                    active={item.current}
+                    target={item.target}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+              <div className="btn-group">
+                {/* email */}
+                <Link href="email" target="_blank" className="btn btn-ghost">
+                  <BsEnvelope size={25} />
+                </Link>
+                {/* whatsapp */}
+                <Link
+                  href="https://wa.me/15103094860"
+                  target="_blank"
+                  className="btn btn-ghost"
+                >
+                  <BsWhatsapp size={25} />
+                </Link>
+                {/* act kit */}
+                <Link
+                  href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
+                  target="_blank"
+                  className="btn btn-ghost"
+                >
+                  <BsCloudDownload size={25} />
+                </Link>
+              </div>
+            </ul>
+          </div>
+        </div>
+        {/* <!-- Page content here --> */}
+        <div className="h-fit w-full">{children}</div>
+      </div>
+      <div className="drawer-side">
+        <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+        <ul className="menu pt-16 w-80 items-end">
+          {/* <!-- Sidebar content here --> */}
+          {navigation.map((item, index) => (
+            <Link
+              id={index}
+              key={index}
+              href={item.href}
+              active={item.current}
+              target={item.target}
+              className="p-2 font-spectralHeader text-xl"
+            >
+              {item.name}
+            </Link>
+          ))}
+          <div className="divider"></div>
+          {/* CONTACT */}
+          <div className="p-2 pt-4 space-y-2">
+            <h3 className="sm:hidden">CONTACT</h3>
+            {/* EMAIL */}
+            <Link href="link" target="_blank" className="flex justify-end p-2 ">
+              <BsEnvelope size={35} />
+            </Link>
+            {/* WHATSAPP */}
+            <Link
+              href="https://wa.me/15103094860"
+              target="_blank"
+              className="flex justify-end p-2"
+            >
+              <BsWhatsapp size={30} />
+            </Link>
+          </div>
 
-        {/* ACT KIT */}
-        <h3 className="p-2 sm:hidden pt-6">ACT KIT</h3>
-        <Navbar.Link
-          id="actkit"
-          href="actkit"
-          className="text-gray-200 md:text-gray-200 hover:text-white md:hover:text-white flex justify-end"
-        >
-          <Tooltip content="Act_Kit" style="light" arrow="false">
-            <BsCloudDownload size={30} />
-          </Tooltip>
-        </Navbar.Link>
-      </Navbar.Collapse>
-    </Navbar>
+          {/* ACT KIT */}
+          <div className="p-2 pt-4 space-y-2">
+            <h3 className="text-gray-400 sm:hidden">ACT KIT</h3>
+            <Link
+              href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
+              target="_blank"
+              className="flex justify-end p-2"
+            >
+              <BsCloudDownload size={30} />
+            </Link>
+          </div>
+          <div className="mt-auto w-full">
+            <Footer />
+          </div>
+        </ul>
+      </div>
+    </div>
   );
 }

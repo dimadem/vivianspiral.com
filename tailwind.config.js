@@ -4,20 +4,24 @@ const { fontFamily } = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} \*/
 module.exports = {
   content: [
-    "./node_modules/flowbite-react/**/*.js",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     colors: {
       white: colors.white,
-      primary: "#e5e7eb", //gray-200
+      black: colors.black,
+      primary: colors.gray, //gray-200
+      secondary: colors.gray, //gray-300
+      focus: colors.gray, //gray-400
     },
     extend: {
+      // BRAND fonts
       fontFamily: {
         montagaText: ["var(--font-montaga)", ...fontFamily.sans],
         spectralHeader: ["var(--font-spectral)", ...fontFamily.sans],
       },
+      // animation
       keyframes: {
         "fade-in-down": {
           "0%": {
@@ -69,5 +73,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["luxury"],
+  },
 };
