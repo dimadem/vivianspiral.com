@@ -38,25 +38,28 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col p-4 justify-center h-screen">
+    <div className="flex flex-col p-4 justify-center items-center h-screen ">
       <div
-        className={`font-montagaText text-xl uppercase text-center animate-fade-in-up ${first}`}
+        className={`font-montagaText text-xl uppercase text-center lg:w-2/3 animate-fade-in-up ${first}`}
       >
         The lights go down and a hush falls over the crowd. A woman steps onto
-        the stage and immediately you sense that something is different. This is
-        an energy, a presence, that you've never felt before.
+        the stage and immediately you sense that something is different.
+        <br /> This is an energy, a presence, that you've never felt before.
       </div>
       <div
-        className={`font-montagaText text-xl uppercase text-center animate-fade-in-up ${second}`}
+        className={`font-montagaText text-xl uppercase text-center lg:w-2/3 animate-fade-in-up ${second}`}
       >
-        She starts to move and energy ripples out into the audience. In the
-        middle of a mind-blowingly complex trick, she meets your eyes and- in
-        that instant- you get a jolt of power, a glimpse of the mystery, a
-        knowing that what is happening here transcends any performance you've
-        seen before. You look around and see that the whole room is captivated.
+        She starts to move and energy ripples out into the audience.
+        <br />
+        <br /> In the middle of a mind-blowingly complex trick, she meets your
+        eyes and- in that instant- you get a jolt of power, a glimpse of the
+        mystery, a knowing that what is happening here transcends any
+        performance you've seen before.
+        <br />
+        <br /> You look around and see that the whole room is captivated.
       </div>
       <div
-        className={`font-montagaText text-xl uppercase text-center animate-fade-in-up ${third}`}
+        className={`font-montagaText text-xl uppercase text-center lg:w-2/3 animate-fade-in-up ${third}`}
       >
         This is magic unfolding, this is mystical movement, this is Spiral.
       </div>
@@ -70,7 +73,7 @@ const AboutmeData = () => {
       <NavBar>
         {/* WELCOME PRESENT */}
         {/* ABOUT ME */}
-        <div className="h-fit w-full flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 text-focus-200">
+        <div className="h-fit w-full flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 lg:mt-4 mt-2">
           <div className="lg:ml-auto lg:mr-4 lg:w-4/5 lg:text-right h-fit sm:w-full text-justify">
             Emanating an electric presence for groups of 20 or 20,000, Spiral
             has wowed audiences all over the globe with her unique movement
@@ -84,7 +87,7 @@ const AboutmeData = () => {
           <div className="divider"></div>
           <div className="lg:mr-auto lg:ml-4 lg:w-1/2 lg:text-left h-fit sm:w-full text-justify">
             Stunning on stage, Spiral's unique and powerful acts create magic
-            for any audience. As roaming, interactive entertainment, Spiral’s
+            for any audience. As roaming, interactive entertainment, Spiral's
             skillfully wielded hoops,magic wand, and acrobatic sphere dance make
             for exciting, pop-up, improvised performance.
           </div>
