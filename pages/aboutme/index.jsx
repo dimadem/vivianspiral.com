@@ -105,7 +105,7 @@ const AboutmeData = () => {
         {/* TESTIMONIALS */}
         <div className="w-screen px-1 animate-fade-in-down">
           <div className="carousel w-full bg-primary-content rounded-lg">
-            <div id="item1" className="carousel-item w-full items-start">
+            <div id="item1" className="carousel-item w-full items-center">
               <div className="p-4">
                 <p className="font-montagaText text-lg p-1">
                   {testimonials[0].text}
@@ -150,21 +150,21 @@ const AboutmeData = () => {
                 </div>
               </div>
             </div>
-            {/* <div id="item4" className="carousel-item w-full items-center">
-          <div className="p-4">
-            <p className="font-montagaText text-base p-1">
-              {testimonials[3].text}
-            </p>
-            <div className="p-2 text-right">
-              <h6 className="text-primary-focus">
-                {testimonials[3].company}
-              </h6>
-                              <p className="text-primary-focus text-xs sm:text-sm uppercase font-spectralHeader">
-
-              {testimonials[3].autor}</p>
+            <div id="item4" className="carousel-item w-full items-center">
+              <div className="p-4">
+                <p className="font-montagaText text-base p-1">
+                  {testimonials[3].text}
+                </p>
+                <div className="p-2 text-right">
+                  <h6 className="text-primary-focus">
+                    {testimonials[3].company}
+                  </h6>
+                  <p className="text-primary-focus text-xs sm:text-sm uppercase font-spectralHeader">
+                    {testimonials[3].autor}
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div> */}
             <div id="item5" className="carousel-item w-full items-center">
               <div className="p-4">
                 <p className="font-montagaText text-lg p-1">
@@ -176,6 +176,21 @@ const AboutmeData = () => {
                   </h6>
                   <p className="text-primary-focus text-xs sm:text-sm uppercase font-spectralHeader">
                     {testimonials[4].autor}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="item6" className="carousel-item w-full items-center">
+              <div className="p-4">
+                <p className="font-montagaText text-lg p-1">
+                  {testimonials[5].text}
+                </p>
+                <div className="p-2 text-right">
+                  <h6 className="text-primary-focus">
+                    {testimonials[5].company}
+                  </h6>
+                  <p className="text-primary-focus text-xs sm:text-sm uppercase font-spectralHeader">
+                    {testimonials[5].autor}
                   </p>
                 </div>
               </div>
@@ -196,6 +211,9 @@ const AboutmeData = () => {
             </a>
             <a href="#item5" className="btn btn-xs">
               5
+            </a>
+            <a href="#item6" className="btn btn-xs">
+              6
             </a>
           </div>
         </div>

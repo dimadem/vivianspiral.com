@@ -8,35 +8,8 @@ export default function Images(params) {
   return (
     <>
       <NavBar>
-        <div className="h-screen w-full pt-2">
-          {performances.map((performance, index) => (
-            <div key={index} tabIndex={index} className="collapse group">
-              <div className="collapse-title font-spectralHeader text-xl">
-                <div className="flex flex-row justify-between">
-                  {performance.header}
-                  <HiOutlineArrowCircleDown size={25} />
-                </div>
-              </div>
-              <div className="collapse-content group-focus:text-secondary-content justify-center">
-                {/* CAROUSEL */}
-                <div className="carousel carousel-center p-4 space-x-4 rounded-box">
-                  {performance.images.map((image, index) => (
-                    <div
-                      key={index}
-                      className="relative carousel-item h-fit w-fit"
-                    >
-                      <Image
-                        src={image.url}
-                        alt={`image + ${index}`}
-                        width="50%"
-                        height="50%"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
+        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"></div>
         </div>
         <Footer />
       </NavBar>

@@ -7,7 +7,7 @@ export default function Footer(params) {
       <div className="items-center grid-flow-col">
         <p>Vivian Spiral © 2023 - All right reserved</p>
       </div>
-      <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end mt-2">
         <Link href="https://www.facebook.com/vivianspiral" target="_blank">
           <BsFacebook size={25} />
         </Link>

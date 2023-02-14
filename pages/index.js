@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import WelcomeScreen from "../components/WelcomeScreen";
-import VideoBackground from "@/components/VideoBackground";
+import VideoBackground from "../components/VideoBackground";
 
 const SliderScreen = dynamic(() => import("../components/SliderScreen"));
 
