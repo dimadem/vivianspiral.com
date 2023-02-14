@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div>
       {loading ? <WelcomeScreen /> : <SliderScreen />}
-      {/* <VideoBackground /> */}
+      <VideoBackground />
     </div>
   );
 }

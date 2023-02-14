@@ -1,13 +1,8 @@
-import {
-  BsEnvelope,
-  BsWhatsapp,
-  BsCloudDownload,
-  BsList,
-} from "react-icons/bs";
-import logo from "public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "./Footer";
+import { BsEnvelope, BsWhatsapp, BsCloudDownload } from "react-icons/bs";
+import logo from "public/logo.png";
 import { navigation } from "@/public/data";
 
 export default function NavBar({ children }) {
@@ -63,25 +58,34 @@ export default function NavBar({ children }) {
               </div>
               <div className="btn-group">
                 {/* email */}
-                <Link href="email" target="_blank" className="btn btn-ghost">
-                  <BsEnvelope size={25} />
-                </Link>
+                <div className="tooltip tooltip-bottom" data-tip="Send E-mail">
+                  <Link href="email" target="_blank" className="btn btn-ghost">
+                    <BsEnvelope size={25} />
+                  </Link>
+                </div>
                 {/* whatsapp */}
-                <Link
-                  href="https://wa.me/15103094860"
-                  target="_blank"
-                  className="btn btn-ghost"
+                <div
+                  className="tooltip tooltip-bottom"
+                  data-tip="Write Message"
                 >
-                  <BsWhatsapp size={25} />
-                </Link>
+                  <Link
+                    href="https://wa.me/15103094860"
+                    target="_blank"
+                    className="btn btn-ghost"
+                  >
+                    <BsWhatsapp size={25} />
+                  </Link>
+                </div>
                 {/* act kit */}
-                <Link
-                  href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
-                  target="_blank"
-                  className="btn btn-ghost"
-                >
-                  <BsCloudDownload size={25} />
-                </Link>
+                <div className="tooltip tooltip-bottom" data-tip="Act Kit">
+                  <Link
+                    href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
+                    target="_blank"
+                    className="btn btn-ghost"
+                  >
+                    <BsCloudDownload size={25} />
+                  </Link>
+                </div>
               </div>
             </ul>
           </div>
@@ -91,7 +95,7 @@ export default function NavBar({ children }) {
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-        <ul className="menu pt-16 w-80 items-end">
+        <ul className="menu pt-16 w-80 items-end bg-neutral p-4">
           {/* <!-- Sidebar content here --> */}
           {navigation.map((item, index) => (
             <Link
@@ -105,10 +109,10 @@ export default function NavBar({ children }) {
               {item.name}
             </Link>
           ))}
-          <div className="divider"></div>
+          <div className="divider w-1/4 ml-auto"></div>
           {/* CONTACT */}
-          <div className="p-2 pt-4 space-y-2">
-            <h3 className="sm:hidden">CONTACT</h3>
+          <div className="p-2 space-y-2">
+            <h3 className="sm:hidden text-focus-600">CONTACT</h3>
             {/* EMAIL */}
             <Link href="link" target="_blank" className="flex justify-end p-2 ">
               <BsEnvelope size={35} />
@@ -122,10 +126,10 @@ export default function NavBar({ children }) {
               <BsWhatsapp size={30} />
             </Link>
           </div>
-
+          <div className="divider w-1/4 ml-auto"></div>
           {/* ACT KIT */}
-          <div className="p-2 pt-4 space-y-2">
-            <h3 className="text-gray-400 sm:hidden">ACT KIT</h3>
+          <div className="p-2 space-y-2">
+            <h3 className="text-focus-600 sm:hidden">ACT KIT</h3>
             <Link
               href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
               target="_blank"

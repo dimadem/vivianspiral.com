@@ -1,5 +1,4 @@
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import NavBar from "@/components/NavBar";
 
 export default function Videos(params) {
@@ -58,7 +57,7 @@ export default function Videos(params) {
           </div>
         </div>
       </div>
-      {/* //todo ADD FOOTER */}
+      <Footer />
     </NavBar>
   );
 }

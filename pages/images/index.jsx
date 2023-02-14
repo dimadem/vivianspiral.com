@@ -8,13 +8,13 @@ export default function Images(params) {
   return (
     <>
       <NavBar>
-        <div className="h-screen w-full">
+        <div className="h-screen w-full pt-2">
           {performances.map((performance, index) => (
-            <div tabIndex={index} className="collapse group">
+            <div key={index} tabIndex={index} className="collapse group">
               <div className="collapse-title font-spectralHeader text-xl">
                 <div className="flex flex-row justify-between">
                   {performance.header}
-                  <HiOutlineArrowCircleDown />
+                  <HiOutlineArrowCircleDown size={25} />
                 </div>
               </div>
               <div className="collapse-content group-focus:text-secondary-content justify-center">
@@ -38,8 +38,7 @@ export default function Images(params) {
             </div>
           ))}
         </div>
-        {/* //todo ADD FOOTER */}
-        {/* <Footer /> */}
+        <Footer />
       </NavBar>
     </>
   );
