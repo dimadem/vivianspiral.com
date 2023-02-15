@@ -87,7 +87,7 @@ export default function SliderScreen() {
             <Image
               src={magicWand_bg}
               alt="Magic_Wand"
-              // style={{ height: "100%" }}
+              priority
               className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
             />
             <h1 className="z-10 text-focus-200 p-2">
@@ -136,7 +136,7 @@ export default function SliderScreen() {
             <Image
               src={ledGlowShow_bg}
               alt="Led Glow Show"
-              // style={{ height: "100%" }}
+              priority
               className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
             />
             <h1 className="z-10  text-focus-200 p-2">
@@ -185,7 +185,7 @@ export default function SliderScreen() {
             <Image
               src={aerialHoop_bg}
               alt="Aerial Hoop"
-              // style={{ height: "100%" }}
+              priority
               className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
             />
             <h1 className="z-10 text-focus-200 p-2">
@@ -234,7 +234,7 @@ export default function SliderScreen() {
             <Image
               src={sphereDance_bg}
               alt="Sphere Dance"
-              // style={{ height: "100%" }}
+              priority
               className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
             />
             <h1 className="z-10 text-focus-200 p-2">
@@ -283,7 +283,7 @@ export default function SliderScreen() {
             <Image
               src={firePerformance_bg}
               alt="Fire Performance"
-              // style={{ height: "100%" }}
+              priority
               className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
             />
             <h1 className="z-10 text-focus-200 p-2">

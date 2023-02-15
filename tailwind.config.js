@@ -87,6 +87,13 @@ module.exports = {
   },
   plugins: [require("daisyui")],
   daisyui: {
+    styled: true,
     themes: ["luxury"],
+    base: true,
+    utils: true,
+    logs: false,
+    rtl: false,
+    prefix: "",
+    // darkTheme: "dark",
   },
 };
