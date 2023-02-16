@@ -12,29 +12,19 @@ export default function VideoBackground() {
 
   return (
     <>
-      {/* <div className="absolute w-fit h-screen aspect-video transform -z-10"> */}
-      {isSSR ? null : (
-        <ReactPlayer
-          key={videoUrl}
-          url={videoUrl}
-          playing={true}
-          loop={true}
-          controls={false}
-          volume={1}
+      <div className="absolute w-full h-screen overflow-hidden aspect-video transform -z-10">
+        {/* {isSSR ? null : ( */}
+        <iframe
           width="100%"
-          height="100%"
-          muted={true}
-          style={{
-            position: "absolute",
-            top: 0,
-            zIndex: -1,
-            // width: "fit",
-            height: "100vh",
-            // objectFit: "cover",
-          }}
-        />
-      )}
-      {/* </div> */}
+          height="100vh"
+          src="https://www.youtube-nocookie.com/embed/g27irY7PY2M?autoplay=1"
+          frameBorder="0"
+          allowFullScreen
+          allow="autoplay"
+          className="absolute top-0 left-0"
+        ></iframe>
+        {/* )} */}
+      </div>
     </>
   );
 }

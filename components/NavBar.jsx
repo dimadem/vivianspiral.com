@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "./Footer";
 import { BsEnvelope, BsWhatsapp, BsCloudDownload } from "react-icons/bs";
-import logo from "public/logo.png";
+import logo from "public/logo.webp";
 import { navigation } from "@/public/data";
 
 export default function NavBar({ children }) {
@@ -16,7 +16,9 @@ export default function NavBar({ children }) {
             <Link href="/">
               <Image
                 src={logo}
-                className="mr-3 h-9 sm:h-11 w-fit"
+                width="180"
+                height="84"
+                className="h-9 sm:h-11 w-fit"
                 alt="Vivian Spiral Logo"
               />
             </Link>

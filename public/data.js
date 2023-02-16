@@ -23,13 +23,13 @@ export const performances = [
     footer:
       "Hula hoops reinvented. Passionate, powerful, innovative and mesmerizing",
     images: [
-      { url: "./images/Hoop_Dance/1.jpg" },
-      { url: "./images/Hoop_Dance/2.jpg" },
-      { url: "./images/Hoop_Dance/3.jpg" },
-      { url: "./images/Hoop_Dance/4.jpg" },
-      { url: "./images/Hoop_Dance/5.jpg" },
-      { url: "./images/Hoop_Dance/6.jpg" },
-      { url: "./images/Hoop_Dance/7.jpg" },
+      { url: "/images/Hoop_Dance/1.jpg" },
+      { url: "/images/Hoop_Dance/2.jpg" },
+      { url: "/images/Hoop_Dance/3.jpg" },
+      { url: "/images/Hoop_Dance/4.jpg" },
+      { url: "/images/Hoop_Dance/5.jpg" },
+      { url: "/images/Hoop_Dance/6.jpg" },
+      { url: "/images/Hoop_Dance/7.jpg" },
     ],
   },
   {
@@ -41,11 +41,11 @@ export const performances = [
     footer:
       "Mystifying, engaging, magical; the dance of a modern-day sorceress",
     images: [
-      { url: "./images/Magic_Wand/1.jpg" },
-      { url: "./images/Magic_Wand/2.jpg" },
-      { url: "./images/Magic_Wand/3.jpg" },
-      { url: "./images/Magic_Wand/4.jpg" },
-      { url: "./images/Magic_Wand/5.jpg" },
+      { url: "/images/Magic_Wand/1.jpg" },
+      { url: "/images/Magic_Wand/2.jpg" },
+      { url: "/images/Magic_Wand/3.jpg" },
+      { url: "/images/Magic_Wand/4.jpg" },
+      { url: "/images/Magic_Wand/5.jpg" },
     ],
   },
   {
@@ -56,12 +56,12 @@ export const performances = [
       "Amazingly bright rainbow lights in a dazzling array of intricate patterns, woven expertly around the body at lightning speed, delighting audiences of all ages. Guests are mesmerized by a light show fusing dance, acrobatics and technical showmanship in a range of props. Spiral's LED Wand and Hula Hoops are fully programmable and customizable, with vibrant designs and photo-realistic graphics. Stunning imagery shifts and changes to the beat of the music; displaying everything from vivid flames and dazzling patterns to the birthday girl's face or company logo.",
     footer: "A kaleidoscope of colored lights and striking designs",
     images: [
-      { url: "./images/LED_Glow_Show/1.jpg" },
-      { url: "./images/LED_Glow_Show/2.jpg" },
-      { url: "./images/LED_Glow_Show/3.jpg" },
-      { url: "./images/LED_Glow_Show/4.jpg" },
-      { url: "./images/LED_Glow_Show/5.PNG" },
-      { url: "./images/LED_Glow_Show/6.jpg" },
+      { url: "/images/LED_Glow_Show/1.jpg" },
+      { url: "/images/LED_Glow_Show/2.jpg" },
+      { url: "/images/LED_Glow_Show/3.jpg" },
+      { url: "/images/LED_Glow_Show/4.jpg" },
+      { url: "/images/LED_Glow_Show/5.PNG" },
+      { url: "/images/LED_Glow_Show/6.jpg" },
     ],
   },
   {
@@ -72,11 +72,11 @@ export const performances = [
       "Strength and grace combine to create beautiful cirque-style performance in the air. With stunning presence, strength and flexibility, Spiral dances on a steel ring, aka Aerial Hoop or Lyra, elevated above the audience. Aerial performances embody the essential elements of circus: beauty and danger. Audiences are enchanted and amazed as her sensual, spinning dance unfolds.",
     footer: "Elegant dance suspended in space",
     images: [
-      { url: "./images/Aerial_Hoop/1.jpg" },
-      { url: "./images/Aerial_Hoop/2.jpg" },
-      { url: "./images/Aerial_Hoop/3.jpg" },
-      { url: "./images/Aerial_Hoop/4.jpg" },
-      { url: "./images/Aerial_Hoop/5.jpg" },
+      { url: "/images/Aerial_Hoop/1.jpg" },
+      { url: "/images/Aerial_Hoop/2.jpg" },
+      { url: "/images/Aerial_Hoop/3.jpg" },
+      { url: "/images/Aerial_Hoop/4.jpg" },
+      { url: "/images/Aerial_Hoop/5.jpg" },
     ],
   },
   {
@@ -87,11 +87,11 @@ export const performances = [
       "The ball rolls across Spiral's body as if it's magnetized, leaving your guests breathless. One moment it seems to magically float, the next it becomes a high-powered dance partner. Moving the sphere all over the body and creating beautiful shapes, this unique act is infused with dance, hand balance, and rhythmic gymnastics.",
     footer: "A visceral, acrobatic take on contact juggling",
     images: [
-      { url: "./images/Sphere_Dance/1.jpg" },
-      { url: "./images/Sphere_Dance/2.jpg" },
-      { url: "./images/Sphere_Dance/3.jpg" },
-      { url: "./images/Sphere_Dance/4.jpg" },
-      { url: "./images/Sphere_Dance/5.jpg" },
+      { url: "/images/Sphere_Dance/1.jpg" },
+      { url: "/images/Sphere_Dance/2.jpg" },
+      { url: "/images/Sphere_Dance/3.jpg" },
+      { url: "/images/Sphere_Dance/4.jpg" },
+      { url: "/images/Sphere_Dance/5.jpg" },
     ],
   },
   {
@@ -102,11 +102,11 @@ export const performances = [
       "Fire; an element so primal, it arouses instant fascination. The element of danger combined with stunning skills creates high-impact performances that leave your guests in awe. Spiral has been dancing with Fire for over 15 years and is an expert performer of this mesmerizing, elemental art form. Delighting at the enchanting interplay of risk and technique, her fire performances are one of a kind.",
     footer: "Spell-binding acts, lit by dancing flames",
     images: [
-      { url: "./images/Fire_Performance/1.jpg" },
-      { url: "./images/Fire_Performance/2.jpg" },
-      { url: "./images/Fire_Performance/3.jpg" },
-      { url: "./images/Fire_Performance/4.jpg" },
-      { url: "./images/Fire_Performance/5.jpg" },
+      { url: "/images/Fire_Performance/1.jpg" },
+      { url: "/images/Fire_Performance/2.jpg" },
+      { url: "/images/Fire_Performance/3.jpg" },
+      { url: "/images/Fire_Performance/4.jpg" },
+      { url: "/images/Fire_Performance/5.jpg" },
     ],
   },
 ];
@@ -148,5 +148,101 @@ export const testimonials = [
     text: "I include Spiral in the majority of proposals for Variety Shows that I am working on, as I know that she will not only 'deliver the goods' on stage, but she will do so in a positively radiant way, and in the process will enchant and charm the entire audience. I  have used her talents for all kinds of crowds, from all adult Corporate events, to some of the more 'Family' types of shows. I can say that without a doubt, she will amaze and hypnotize people from 9 months to 90 years old. If you want to create a memorable show and one that will amaze, enchant, mesmerize and entertain your audience, then you NEED to book Spiral and make her a part of your show, event, or production.",
     company: "Fettucini Entertainment",
     autor: "Steve Langley - Director, Producer, and President",
+  },
+];
+
+//! GALLERY
+export const gallery = [
+  {
+    id: 1,
+    url: "/images/Gallery/img_1.webp",
+  },
+  {
+    id: 2,
+    url: "/images/Gallery/img_2.webp",
+  },
+  {
+    id: 3,
+    url: "/images/Gallery/img_3.webp",
+  },
+  {
+    id: 4,
+    url: "/images/Gallery/img_4.webp",
+  },
+  {
+    id: 5,
+    url: "/images/Gallery/img_5.webp",
+  },
+  {
+    id: 6,
+    url: "/images/Gallery/img_6.webp",
+  },
+  {
+    id: 7,
+    url: "/images/Gallery/img_7.webp",
+  },
+  {
+    id: 8,
+    url: "/images/Gallery/img_8.webp",
+  },
+  {
+    id: 9,
+    url: "/images/Gallery/img_9.webp",
+  },
+  {
+    id: 10,
+    url: "/images/Gallery/img_10.webp",
+  },
+  {
+    id: 11,
+    url: "/images/Gallery/img_11.webp",
+  },
+  {
+    id: 12,
+    url: "/images/Gallery/img_12.webp",
+  },
+  {
+    id: 13,
+    url: "/images/Gallery/img_13.webp",
+  },
+  {
+    id: 14,
+    url: "/images/Gallery/img_14.webp",
+  },
+  {
+    id: 15,
+    url: "/images/Gallery/img_15.webp",
+  },
+  {
+    id: 16,
+    url: "/images/Gallery/img_16.webp",
+  },
+  {
+    id: 17,
+    url: "/images/Gallery/img_17.webp",
+  },
+  {
+    id: 18,
+    url: "/images/Gallery/img_18.webp",
+  },
+  {
+    id: 19,
+    url: "/images/Gallery/img_19.webp",
+  },
+  {
+    id: 20,
+    url: "/images/Gallery/img_20.webp",
+  },
+  {
+    id: 21,
+    url: "/images/Gallery/img_21.webp",
+  },
+  {
+    id: 22,
+    url: "/images/Gallery/img_22.webp",
+  },
+  {
+    id: 23,
+    url: "/images/Gallery/img_23.webp",
   },
 ];

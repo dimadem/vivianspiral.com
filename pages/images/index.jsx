@@ -1,15 +1,20 @@
-import { performances } from "../../public/data.js";
-import Image from "next/image";
-import { HiOutlineArrowCircleDown } from "react-icons/hi";
 import NavBar from "@/components/NavBar.jsx";
 import Footer from "@/components/Footer";
+import { gallery } from "@/public/data";
+import ImageFrame from "@/components/ImageFrame";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 export default function Images(params) {
   return (
     <>
       <NavBar>
-        <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8"></div>
+        <div className="p-2 md:p-10 lg:p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-3 lg:gap-5">
+          <Suspense fallback={<Loading />}>
+            {gallery.map((img, index) => (
+              <ImageFrame src={img.url} alt={img.id} key={index} />
+            ))}
+          </Suspense>
         </div>
         <Footer />
       </NavBar>

@@ -325,7 +325,6 @@ export default function SliderScreen() {
             </div>
           </div>
         </div>
-        <div className="w-full h-screen">socials</div>
         <Footer />
       </NavBar>
     </>
