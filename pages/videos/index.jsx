@@ -2,6 +2,11 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
 export default function Videos(params) {
+  const videoIdOne = "o5WGk-DTe88";
+  const videoIdTwo = "MScHgmv_U0E";
+  const videoIdThree = "ln3Ihqp7AMg";
+  const videoIdFour = "qgBPHZI7z9U";
+
   return (
     <NavBar>
       <div className="flex flex-col">
@@ -18,7 +23,7 @@ export default function Videos(params) {
             ></iframe>
           </div>
           <div className="divider lg:divider-horizontal"></div>
-          <div className="grid flex-grow h-[330px] aspect-video card  place-items-center m-2">
+          <div className="grid flex-grow h-auto aspect-video card  place-items-center m-2">
             <iframe
               width="100%"
               height="100%"
@@ -32,7 +37,7 @@ export default function Videos(params) {
         </div>
         <div className="divider "></div>
         <div className="flex flex-col w-full lg:flex-row">
-          <div className="grid flex-grow h-[330px] aspect-video card  place-items-center m-2">
+          <div className="grid flex-grow h-auto aspect-video card  place-items-center m-2">
             <iframe
               width="100%"
               height="100%"
@@ -44,7 +49,7 @@ export default function Videos(params) {
             ></iframe>
           </div>
           <div className="divider lg:divider-horizontal"></div>
-          <div className="grid flex-grow h-[330px] aspect-video card place-items-center m-2">
+          <div className="grid flex-grow h-auto aspect-video card place-items-center m-2">
             <iframe
               width="100%"
               height="100%"

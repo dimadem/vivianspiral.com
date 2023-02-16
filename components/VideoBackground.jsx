@@ -7,12 +7,16 @@ export default function VideoBackground() {
   return (
     <>
       <div className="absolute top-0 w-full h-screen overflow-hidden aspect-video transform -z-10">
-        <LiteYouTubeEmbed
-          id={videoId}
-          title="Vivian Spiral - The Act Kit"
-          noCookie={true}
-          params="controls=0&showinfo=0&autoplay=1&mute=1&loop=1"
-        />
+        <iframe
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+          title="Vivian - YouTube"
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          fill="true"
+          allow="accelerometer; autoplay; clipboard-write; "
+          allowFullScreen
+        ></iframe>
       </div>
     </>
   );
