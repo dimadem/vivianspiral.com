@@ -1,8 +1,8 @@
 //! NAVBAR
 export const navigation = [
-  { name: "ABOUT ME", href: "/aboutme", current: false, target: "" },
-  { name: "IMAGES", href: "/images", current: false, target: "" },
-  { name: "VIDEOS", href: "/videos", current: false, target: "" },
+  { name: "ABOUT ME", href: "/aboutme" },
+  { name: "IMAGES", href: "/images" },
+  { name: "VIDEOS", href: "/videos" },
   {
     name: "LEARN",
     href: "https://spiralcircusarts.bigcartel.com/",
@@ -155,94 +155,94 @@ export const testimonials = [
 export const gallery = [
   {
     id: 1,
-    url: "/images/Gallery/img_1.webp",
+    src: "/images/Gallery/img_1.webp",
   },
   {
     id: 2,
-    url: "/images/Gallery/img_2.webp",
+    src: "/images/Gallery/img_2.webp",
   },
   {
     id: 3,
-    url: "/images/Gallery/img_3.webp",
+    src: "/images/Gallery/img_3.webp",
   },
   {
     id: 4,
-    url: "/images/Gallery/img_4.webp",
+    src: "/images/Gallery/img_4.webp",
   },
   {
     id: 5,
-    url: "/images/Gallery/img_5.webp",
+    src: "/images/Gallery/img_5.webp",
   },
   {
     id: 6,
-    url: "/images/Gallery/img_6.webp",
+    src: "/images/Gallery/img_6.webp",
   },
   {
     id: 7,
-    url: "/images/Gallery/img_7.webp",
+    src: "/images/Gallery/img_7.webp",
   },
   {
     id: 8,
-    url: "/images/Gallery/img_8.webp",
+    src: "/images/Gallery/img_8.webp",
   },
   {
     id: 9,
-    url: "/images/Gallery/img_9.webp",
+    src: "/images/Gallery/img_9.webp",
   },
   {
     id: 10,
-    url: "/images/Gallery/img_10.webp",
+    src: "/images/Gallery/img_10.webp",
   },
   {
     id: 11,
-    url: "/images/Gallery/img_11.webp",
+    src: "/images/Gallery/img_11.webp",
   },
   {
     id: 12,
-    url: "/images/Gallery/img_12.webp",
+    src: "/images/Gallery/img_12.webp",
   },
   {
     id: 13,
-    url: "/images/Gallery/img_13.webp",
+    src: "/images/Gallery/img_13.webp",
   },
   {
     id: 14,
-    url: "/images/Gallery/img_14.webp",
+    src: "/images/Gallery/img_14.webp",
   },
   {
     id: 15,
-    url: "/images/Gallery/img_15.webp",
+    src: "/images/Gallery/img_15.webp",
   },
   {
     id: 16,
-    url: "/images/Gallery/img_16.webp",
+    src: "/images/Gallery/img_16.webp",
   },
   {
     id: 17,
-    url: "/images/Gallery/img_17.webp",
+    src: "/images/Gallery/img_17.webp",
   },
   {
     id: 18,
-    url: "/images/Gallery/img_18.webp",
+    src: "/images/Gallery/img_18.webp",
   },
   {
     id: 19,
-    url: "/images/Gallery/img_19.webp",
+    src: "/images/Gallery/img_19.webp",
   },
   {
     id: 20,
-    url: "/images/Gallery/img_20.webp",
+    src: "/images/Gallery/img_20.webp",
   },
   {
     id: 21,
-    url: "/images/Gallery/img_21.webp",
+    src: "/images/Gallery/img_21.webp",
   },
   {
     id: 22,
-    url: "/images/Gallery/img_22.webp",
+    src: "/images/Gallery/img_22.webp",
   },
   {
     id: 23,
-    url: "/images/Gallery/img_23.webp",
+    src: "/images/Gallery/img_23.webp",
   },
 ];

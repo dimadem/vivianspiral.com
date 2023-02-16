@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import WelcomeScreen from "../components/WelcomeScreen";
@@ -21,7 +20,8 @@ export default function Home() {
 
   return (
     <div>
-      {loading ? <WelcomeScreen /> : <SliderScreen />}
+      {/* {loading ? <WelcomeScreen /> : <SliderScreen />} */}
+      <SliderScreen />
       <VideoBackground />
     </div>
   );

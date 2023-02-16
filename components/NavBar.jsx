@@ -18,6 +18,7 @@ export default function NavBar({ children }) {
                 src={logo}
                 width="180"
                 height="84"
+                priority
                 className="h-9 sm:h-11 w-fit"
                 alt="Vivian Spiral Logo"
               />
@@ -51,8 +52,6 @@ export default function NavBar({ children }) {
                     href={item.href}
                     id={index}
                     key={index}
-                    active={item.current}
-                    target={item.target}
                   >
                     {item.name}
                   </Link>
@@ -101,11 +100,8 @@ export default function NavBar({ children }) {
           {/* <!-- Sidebar content here --> */}
           {navigation.map((item, index) => (
             <Link
-              id={index}
               key={index}
               href={item.href}
-              active={item.current}
-              target={item.target}
               className="p-2 font-spectralHeader text-xl"
             >
               {item.name}

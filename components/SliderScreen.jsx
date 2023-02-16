@@ -48,7 +48,6 @@ export default function SliderScreen() {
             >
               {performances[0].description}
             </p>
-
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
