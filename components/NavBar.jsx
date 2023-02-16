@@ -60,7 +60,11 @@ export default function NavBar({ children }) {
               <div className="btn-group">
                 {/* email */}
                 <div className="tooltip tooltip-bottom" data-tip="Send E-mail">
-                  <Link href="email" target="_blank" className="btn btn-ghost">
+                  <Link
+                    href="mailto:info@vivianspiral.com"
+                    target="_blank"
+                    className="btn btn-ghost"
+                  >
                     <BsEnvelope size={25} />
                   </Link>
                 </div>
@@ -112,7 +116,11 @@ export default function NavBar({ children }) {
           <div className="p-2 space-y-2">
             <h3 className="sm:hidden text-focus-600">CONTACT</h3>
             {/* EMAIL */}
-            <Link href="link" target="_blank" className="flex justify-end p-2 ">
+            <Link
+              href="mailto:info@vivianspiral.com"
+              target="_blank"
+              className="flex justify-end p-2 "
+            >
               <BsEnvelope size={35} />
             </Link>
             {/* WHATSAPP */}
