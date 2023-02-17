@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { testimonials } from "@/public/data";
 
-export default function Aboutme(params) {
+export default function About(params) {
   const [loading, setIsLoading] = useState(true);
 
   // timer to simulate loading
@@ -16,10 +16,18 @@ export default function Aboutme(params) {
     }
   }, [loading]);
 
-  return <>{loading ? <Welcome /> : <AboutmeData />}</>;
+  return (
+    <>
+      {loading ? (
+        <Welcome useSetIsLoading={() => setIsLoading(false)} />
+      ) : (
+        <AboutmeData />
+      )}
+    </>
+  );
 }
 
-const Welcome = () => {
+const Welcome = ({ useSetIsLoading }) => {
   const [first, setFirst] = useState("");
   const [second, setSecond] = useState("hidden");
   const [third, setThird] = useState("hidden");
@@ -38,31 +46,35 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div className="flex flex-col p-4 justify-center items-center h-screen ">
-      <div
-        className={`font-montagaText text-xl uppercase text-center lg:w-2/3 animate-fade-in-up ${first}`}
+    <div className="flex flex-col p-4 justify-center items-center h-screen bg-focus-300 text-black">
+      <button
+        className="absolute right-4 top-3 btn btn-ghost font-spectralHeader text-sm"
+        onClick={useSetIsLoading}
       >
-        The lights go down and a hush falls over the crowd. A woman steps onto
-        the stage and immediately you sense that something is different.
+        skip
+      </button>
+      <div
+        className={`font-spectralHeader text-lg uppercase text-center lg:w-2/3 animate-fade-in-up ${first}`}
+      >
+        The lights go down and a hush falls over the crowd.
+        <br />A woman steps onto the stage and immediately you sense that
+        something is different.
         <br /> This is an energy, a presence, that you&apos;ve never felt
         before.
       </div>
       <div
-        className={`font-montagaText text-xl uppercase text-center lg:w-2/3 animate-fade-in-up ${second}`}
+        className={`font-spectralHeader text-lg uppercase text-center lg:w-2/3 animate-fade-in-up ${second}`}
       >
         She starts to move and energy ripples out into the audience.
-        <br />
         <br /> In the middle of a mind-blowingly complex trick, she meets your
-        eyes and- in that instant- you get a jolt of power, a glimpse of the
-        mystery, a knowing that what is happening here transcends any
-        performance you&apos;ve seen before.
-        <br />
+        eyes and- in that instant- you get a jolt of
+        <br /> power, a glimpse of the mystery, a knowing that what is happening
+        here
+        <br /> transcends any performance you&apos;ve seen before.
         <br /> You look around and see that the whole room is captivated.
-      </div>
-      <div
-        className={`font-montagaText text-xl uppercase text-center lg:w-2/3 animate-fade-in-up ${third}`}
-      >
-        This is magic unfolding, this is mystical movement, this is Spiral.
+        <br />
+        <br />
+        This is magic unfolding, this is mystical movement, this is Spiral
       </div>
     </div>
   );
@@ -80,16 +92,19 @@ const AboutmeData = () => {
             has wowed audiences all over the globe with her unique movement
             style and commanding stage presence. An artist on the cutting edge
             of circus and flow arts, Spiral is known worldwide for the fierce
-            grace she brings to the stage. A powerhouse performer in a wide
-            variety of disciplines, Spiral delivers elegant entertainment that
-            leaves your guests amazed, inspired, and delighted; making your
-            event absolutely unforgettable.
+            grace she brings to the stage.
           </div>
           <div className="divider"></div>
-          <div className="lg:mr-auto lg:ml-4 lg:w-1/2 lg:text-left h-fit sm:w-full text-justify">
+          <div className="lg:ml-auto lg:mr-4 lg:w-3/5 lg:text-right h-fit sm:w-full text-justify">
+            A powerhouse performer in a wide variety of disciplines, Spiral
+            delivers elegant entertainment that leaves your guests amazed,
+            inspired, and delighted; making your event absolutely unforgettable.
+          </div>
+          <div className="divider"></div>
+          <div className="lg:ml-auto lg:mr-4 lg:w-3/5 lg:text-right h-fit sm:w-full text-justify">
             Stunning on stage, Spiral&apos;s unique and powerful acts create
             magic for any audience. As roaming, interactive entertainment,
-            Spiral&apos;s skillfully wielded hoops,magic wand, and acrobatic
+            Spiral&apos;s skillfully wielded hoops, magic wand, and acrobatic
             sphere dance make for exciting, pop-up, improvised performance.
           </div>
           <div className="divider"></div>
@@ -107,7 +122,7 @@ const AboutmeData = () => {
           <div className="carousel w-full bg-primary-content rounded-lg">
             <div id="item1" className="carousel-item w-full items-center">
               <div className="p-4">
-                <p className="font-montagaText text-lg p-1">
+                <p className="font-montagaText text-lg p-1 text-neutral-content">
                   {testimonials[0].text}
                 </p>
                 <div className="p-2 text-right">
@@ -122,7 +137,7 @@ const AboutmeData = () => {
             </div>
             <div id="item2" className="carousel-item w-full items-center">
               <div className="p-4">
-                <p className="font-montagaText text-lg p-1">
+                <p className="font-montagaText text-lg p-1 text-neutral-content">
                   {testimonials[1].text}
                 </p>
                 <div className="p-2 text-right">
@@ -137,7 +152,7 @@ const AboutmeData = () => {
             </div>
             <div id="item3" className="carousel-item w-full items-center">
               <div className="p-4">
-                <p className="font-montagaText text-lg p-1">
+                <p className="font-montagaText text-lg p-1 text-neutral-content">
                   {testimonials[2].text}
                 </p>
                 <div className="p-2 text-right">
@@ -152,7 +167,7 @@ const AboutmeData = () => {
             </div>
             <div id="item4" className="carousel-item w-full items-center">
               <div className="p-4">
-                <p className="font-montagaText text-base p-1">
+                <p className="font-montagaText text-lg p-1 text-neutral-content">
                   {testimonials[3].text}
                 </p>
                 <div className="p-2 text-right">
@@ -167,7 +182,7 @@ const AboutmeData = () => {
             </div>
             <div id="item5" className="carousel-item w-full items-center">
               <div className="p-4">
-                <p className="font-montagaText text-lg p-1">
+                <p className="font-montagaText text-lg p-1 text-neutral-content">
                   {testimonials[4].text}
                 </p>
                 <div className="p-2 text-right">
@@ -182,7 +197,7 @@ const AboutmeData = () => {
             </div>
             <div id="item6" className="carousel-item w-full items-center">
               <div className="p-4">
-                <p className="font-montagaText text-lg p-1">
+                <p className="font-montagaText text-lg p-1 text-neutral-content">
                   {testimonials[5].text}
                 </p>
                 <div className="p-2 text-right">

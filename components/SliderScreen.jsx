@@ -30,24 +30,30 @@ export default function SliderScreen() {
       <NavBar>
         <div className="carousel w-full h-screen z-0 animate-fade-in-up">
           {/* 1 */}
-          <div
-            id="slide1"
-            className="relative carousel-item w-full flex flex-col items-center justify-between overflow-hidden"
-          >
+          <div id="slide1" className="slide-frame">
             <Image
               src={hoopDance_bg}
               alt="Hoop Dance"
               priority
-              className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+              className="slide-bgImage"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[0].header}
             </h1>
+
             <p
-              className={`${hide} z-10 font-montagaText text-xl text-justify animate-fade-in-up w-[75%] lg:w-[70%] p-1 bg-neutral bg-opacity-60 h-full flex flex-col justify-end`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center`}
             >
-              {performances[0].description}
+              Illusion, acrobatics, and dance combine in a contemporary take on
+              the classic hula hoop.
+              <br />
+              <br />
+              Combining elements of classic circus, modern object manipulation,
+              Native American hoop dance, and dervish-like spinning with her own
+              fierce, joyful passion, Spiral&apos;s hoop dance is unlike any
+              other.
             </p>
+
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
@@ -64,12 +70,10 @@ export default function SliderScreen() {
                   <BsCollection size={32} />
                 </button>
               </div>
-              <h4 className="text-center font-extralight pb-5 text-focus-200">
-                {performances[0].footer}
-              </h4>
+              <h4 className="slide-footer">{performances[0].footer}</h4>
             </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            {/* Slide Navigation */}
+            <div className="slide-navigation">
               <Link href="#slide6" className="btn-ghost">
                 ❮
               </Link>
@@ -79,23 +83,28 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 2 */}
-          <div
-            id="slide2"
-            className="carousel-item relative w-full flex flex-col items-center justify-between overflow-hidden"
-          >
+          <div id="slide2" className="slide-frame">
             <Image
               src={magicWand_bg}
               alt="Magic_Wand"
               priority
-              className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+              className="slide-bgImage"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[1].header}
             </h1>
             <p
-              className={`${hide} z-10 font-montagaText text-xl text-justify animate-fade-in-up w-[75%] lg:w-[70%] p-1 bg-neutral bg-opacity-60 h-full flex flex-col justify-end`}
+              className={`${hide} z-10 flex flex-col justify-center slide-description`}
             >
-              {performances[1].description}
+              Putting a modern twist on a magic trick from the turn of the
+              century, this mesmerizing prop combines grace, elegance, illusion,
+              and dance, leaving audiences perplexed and enchanted.
+              <br />
+              <br />
+              One moment Spiral spins the wand like a pinwheel, the next moment
+              it&apos;s floating over her palm in space, only to fly out around
+              her body in impossible arcs that defy logic; the wand is truly
+              magical.
             </p>
             {/* SHOW / HIDE Description */}
             <div className="z-10 flex flex-col items-center w-full p-4">
@@ -113,12 +122,10 @@ export default function SliderScreen() {
                   <BsCollection size={32} />
                 </button>
               </div>
-              <h4 className="text-center font-extralight pb-5 text-focus-200">
-                {performances[1].footer}
-              </h4>
+              <h4 className="slide-footer"> {performances[1].footer}</h4>
             </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            {/* Slide Navigation */}
+            <div className="slide-navigation">
               <Link href="#slide1" className="btn-ghost">
                 ❮
               </Link>
@@ -128,23 +135,33 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 3 */}
-          <div
-            id="slide3"
-            className="carousel-item relative w-full flex flex-col items-center justify-between overflow-hidden"
-          >
+          <div id="slide3" className="slide-frame">
             <Image
               src={ledGlowShow_bg}
               alt="Led Glow Show"
               priority
-              className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+              className="slide-bgImage"
             />
             <h1 className="z-10  text-focus-200 p-2">
               {performances[2].header}
             </h1>
             <p
-              className={`${hide} z-10 font-montagaText text-xl text-justify animate-fade-in-up w-[75%] lg:w-[70%] p-1 bg-neutral bg-opacity-60 h-full flex flex-col justify-end`}
+              className={`${hide} z-10 flex flex-col justify-center slide-description`}
             >
-              {performances[2].description}
+              Amazingly bright rainbow lights in a dazzling array of intricate
+              patterns, woven expertly around the body at lightning speed,
+              delighting audiences of all ages. Guests are mesmerized by a light
+              show fusing dance, acrobatics and technical showmanship.
+              <br />
+              <br />
+              Stunning imagery shifts and changes to the beat of the music;
+              displaying everything from vivid flames and dazzling patterns to
+              the birthday girl&apos;s face or company logo.
+              <br />
+              <br />
+              Spiral&apos;s LED Wand and Hula Hoops are fully programmable and
+              customizable for bespoke performances with vibrant designs and
+              photo-realistic graphics.
             </p>
             {/* SHOW / HIDE Description */}
             <div className="z-10 flex flex-col items-center w-full p-4">
@@ -162,12 +179,10 @@ export default function SliderScreen() {
                   <BsCollection size={32} />
                 </button>
               </div>
-              <h4 className="text-center font-extralight pb-5 text-focus-200">
-                {performances[2].footer}
-              </h4>
+              <h4 className="slide-footer"> {performances[2].footer}</h4>
             </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            {/* Slide Navigation */}
+            <div className="slide-navigation">
               <Link href="#slide2" className="btn-ghost">
                 ❮
               </Link>
@@ -177,23 +192,28 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 4 */}
-          <div
-            id="slide4"
-            className="carousel-item relative w-full flex flex-col items-center justify-between overflow-hidden"
-          >
+          <div id="slide4" className="slide-frame">
             <Image
               src={aerialHoop_bg}
               alt="Aerial Hoop"
               priority
-              className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+              className="slide-bgImage"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[3].header}
             </h1>
             <p
-              className={`${hide} z-10 font-montagaText text-xl text-justify animate-fade-in-up w-[75%] lg:w-[70%] p-1 bg-neutral bg-opacity-60 h-full flex flex-col justify-end`}
+              className={`${hide} z-10 flex flex-col justify-center slide-description`}
             >
-              {performances[3].description}
+              Strength and grace combine to create beautiful cirque-style
+              performance in the air. With stunning presence, strength and
+              flexibility, Spiral dances on a steel ring, aka Aerial Hoop or
+              Lyra, elevated above the audience. Audiences are enchanted and
+              amazed as her strong, spinning dance unfolds.
+              <br />
+              <br />
+              Aerial performances embody the essential elements of circus:
+              beauty and danger.
             </p>
             {/* SHOW / HIDE Description */}
             <div className="z-10 flex flex-col items-center w-full p-4">
@@ -211,12 +231,10 @@ export default function SliderScreen() {
                   <BsCollection size={32} />
                 </button>
               </div>
-              <h4 className="text-center font-extralight pb-5 text-focus-200">
-                {performances[3].footer}
-              </h4>
+              <h4 className="slide-footer"> {performances[3].footer}</h4>
             </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            {/* Slide Navigation */}
+            <div className="slide-navigation">
               <Link href="#slide3" className="btn-ghost">
                 ❮
               </Link>
@@ -226,23 +244,27 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 5 */}
-          <div
-            id="slide5"
-            className="carousel-item relative w-full flex flex-col items-center justify-between overflow-hidden"
-          >
+          <div id="slide5" className="slide-frame">
             <Image
               src={sphereDance_bg}
               alt="Sphere Dance"
               priority
-              className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+              className="slide-bgImage"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[4].header}
             </h1>
             <p
-              className={`${hide} z-10 font-montagaText text-xl text-justify animate-fade-in-up w-[75%] lg:w-[70%] p-1 bg-neutral bg-opacity-60 h-full flex flex-col justify-end`}
+              className={`${hide} z-10 flex flex-col justify-center slide-description`}
             >
-              {performances[4].description}
+              The ball rolls across Spiral&apos;s body as if it&apos;s
+              magnetized, leaving your guests breathless. One moment it seems to
+              magically float, the next it becomes a high-powered dance partner.
+              <br />
+              <br />
+              Moving the sphere all over the body and creating beautiful shapes,
+              this unique act is infused with dance, hand balance, and rhythmic
+              gymnastics.
             </p>
             {/* SHOW / HIDE Description */}
             <div className="z-10 flex flex-col items-center w-full p-4">
@@ -260,12 +282,10 @@ export default function SliderScreen() {
                   <BsCollection size={32} />
                 </button>
               </div>
-              <h4 className="text-center font-extralight pb-5 text-focus-200">
-                {performances[4].footer}
-              </h4>
+              <h4 className="slide-footer"> {performances[4].footer}</h4>
             </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            {/* Slide Navigation */}
+            <div className="slide-navigation">
               <Link href="#slide4" className="btn-ghost">
                 ❮
               </Link>
@@ -275,23 +295,30 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 6 */}
-          <div
-            id="slide6"
-            className="carousel-item relative w-full flex flex-col items-center justify-between overflow-hidden"
-          >
+          <div id="slide6" className="slide-frame">
             <Image
               src={firePerformance_bg}
               alt="Fire Performance"
               priority
-              className="absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+              className="slide-bgImage"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[5].header}
             </h1>
             <p
-              className={`${hide} z-10 font-montagaText text-xl text-justify animate-fade-in-up w-[75%] lg:w-[70%] p-1 bg-neutral bg-opacity-60 h-full flex flex-col justify-end`}
+              className={`${hide} z-10 flex flex-col justify-center slide-description`}
             >
-              {performances[5].description}
+              Fire; an element so primal, it arouses instant fascination. The
+              element of danger combined with stunning skills creates
+              high-impact performances that leave your guests in awe.
+              <br />
+              <br />
+              Spiral has been dancing with Fire for over 15 years and is an
+              expert performer of this mesmerizing, elemental art form.
+              <br />
+              <br />
+              Delighting at the enchanting interplay of risk and technique, her
+              fire performances are one of a kind.
             </p>
             {/* SHOW / HIDE Description */}
             <div className="z-10 flex flex-col items-center w-full p-4">
@@ -309,12 +336,10 @@ export default function SliderScreen() {
                   <BsCollection size={32} />
                 </button>
               </div>
-              <h4 className="text-center font-extralight pb-5 text-focus-200">
-                {performances[5].footer}
-              </h4>
+              <h4 className="slide-footer"> {performances[5].footer}</h4>
             </div>
-
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            {/* Slide Navigation */}
+            <div className="slide-navigation">
               <Link href="#slide5" className="btn-ghost">
                 ❮
               </Link>

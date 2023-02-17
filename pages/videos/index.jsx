@@ -2,11 +2,6 @@ import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 
 export default function Videos(params) {
-  const videoIdOne = "o5WGk-DTe88";
-  const videoIdTwo = "MScHgmv_U0E";
-  const videoIdThree = "ln3Ihqp7AMg";
-  const videoIdFour = "qgBPHZI7z9U";
-
   return (
     <NavBar>
       <div className="flex flex-col">
@@ -15,7 +10,7 @@ export default function Videos(params) {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/o5WGk-DTe88"
+              src="https://www.youtube.com/embed/g27irY7PY2M"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -53,7 +48,7 @@ export default function Videos(params) {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/qgBPHZI7z9U"
+              src="https://www.youtube.com/embed/sLiaGfAnpWE"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
