@@ -13,9 +13,9 @@ import {
 import { performances } from "../public/data.js";
 
 //! bg images
-import hoopDance_bg from "../public/images/Hoop_Dance/bg/1_bg_sq_rmbg.png";
-import magicWand_bg from "../public/images/Magic_Wand/bg/3_bg_sq_rmbg.png";
-import ledGlowShow_bg from "../public/images/LED_Glow_Show/bg/3_bg_sq_rmbg.png";
+import hoopDance_bg from "../public/images/Hoop_Dance/bg/1_bg_rt_rmbg.png";
+import magicWand_bg from "../public/images/Magic_Wand/bg/3_bg_rt_rmbg.png";
+import ledGlowShow_bg from "../public/images/LED_Glow_Show/bg/3_bg_rt_rmbg.png";
 import aerialHoop_bg from "../public/images/Aerial_Hoop/bg/1_bg_rt_rmbg.png";
 import sphereDance_bg from "../public/images/Sphere_Dance/bg/4_bg_rt_rmbg.png";
 import firePerformance_bg from "../public/images/Fire_Performance/bg/4_bg_rt_rmbg.png";
