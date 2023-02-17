@@ -30,10 +30,10 @@
     @apply relative carousel-item w-full h-screen flex flex-col items-center justify-between overflow-hidden;
   }
   .slide-bgImage {
-    @apply absolute z-0 aspect-square min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2;
+    @apply absolute z-0  min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2;
   }
   .slide-description {
-    @apply animate-fade-in-up font-montagaText text-xl text-justify w-[80%] lg:w-[90%] p-1 bg-neutral bg-opacity-60 h-full;
+    @apply animate-fade-in-up font-montagaText text-xl text-justify w-[80%] lg:w-[90%] p-1 bg-neutral bg-opacity-60 h-full overflow-scroll;
   }
   .slide-footer {
     @apply text-center font-extralight pb-5 text-focus-200;

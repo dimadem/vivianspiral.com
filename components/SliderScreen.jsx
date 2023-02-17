@@ -16,9 +16,9 @@ import { performances } from "../public/data.js";
 import hoopDance_bg from "../public/images/Hoop_Dance/bg/1_bg_sq_rmbg.png";
 import magicWand_bg from "../public/images/Magic_Wand/bg/3_bg_sq_rmbg.png";
 import ledGlowShow_bg from "../public/images/LED_Glow_Show/bg/3_bg_sq_rmbg.png";
-import aerialHoop_bg from "../public/images/Aerial_Hoop/bg/1_bg_sq_rmbg.png";
-import sphereDance_bg from "../public/images/Sphere_Dance/bg/4_bg_sq_rmbg.png";
-import firePerformance_bg from "../public/images/Fire_Performance/bg/4_bg_sq_rmbg.png";
+import aerialHoop_bg from "../public/images/Aerial_Hoop/bg/1_bg_rt_rmbg.png";
+import sphereDance_bg from "../public/images/Sphere_Dance/bg/4_bg_rt_rmbg.png";
+import firePerformance_bg from "../public/images/Fire_Performance/bg/4_bg_rt_rmbg.png";
 
 export default function SliderScreen() {
   // hide description
@@ -148,6 +148,10 @@ export default function SliderScreen() {
             <p
               className={`${hide} z-10 flex flex-col justify-center slide-description`}
             >
+              <br />
+              <br />
+              <br />
+              <br />
               Amazingly bright rainbow lights in a dazzling array of intricate
               patterns, woven expertly around the body at lightning speed,
               delighting audiences of all ages. Guests are mesmerized by a light
