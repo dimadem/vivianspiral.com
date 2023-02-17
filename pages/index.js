@@ -20,8 +20,12 @@ export default function Home() {
 
   return (
     <div>
-      {/* {loading ? <WelcomeScreen /> : <SliderScreen />} */}
-      <SliderScreen />
+      {loading ? (
+        <WelcomeScreen useSetIsLoading={() => setIsLoading(false)} />
+      ) : (
+        <SliderScreen />
+      )}
+      {/* <SliderScreen /> */}
       {/* <VideoBackground /> */}
     </div>
   );

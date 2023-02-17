@@ -107,7 +107,7 @@ export default function SliderScreen() {
               magical.
             </p>
             {/* SHOW / HIDE Description */}
-            <div className="z-10 flex flex-col items-center w-full p-4">
+            <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
@@ -164,7 +164,7 @@ export default function SliderScreen() {
               photo-realistic graphics.
             </p>
             {/* SHOW / HIDE Description */}
-            <div className="z-10 flex flex-col items-center w-full p-4">
+            <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
@@ -216,7 +216,7 @@ export default function SliderScreen() {
               beauty and danger.
             </p>
             {/* SHOW / HIDE Description */}
-            <div className="z-10 flex flex-col items-center w-full p-4">
+            <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
@@ -267,7 +267,7 @@ export default function SliderScreen() {
               gymnastics.
             </p>
             {/* SHOW / HIDE Description */}
-            <div className="z-10 flex flex-col items-center w-full p-4">
+            <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
@@ -321,7 +321,7 @@ export default function SliderScreen() {
               fire performances are one of a kind.
             </p>
             {/* SHOW / HIDE Description */}
-            <div className="z-10 flex flex-col items-center w-full p-4">
+            <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
