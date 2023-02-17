@@ -19,14 +19,14 @@ export default function Home() {
   }, [loading]);
 
   return (
-    <div>
+    <div className="relative">
       {loading ? (
         <WelcomeScreen useSetIsLoading={() => setIsLoading(false)} />
       ) : (
         <SliderScreen />
       )}
       {/* <SliderScreen /> */}
-      {/* <VideoBackground /> */}
+      <VideoBackground />
     </div>
   );
 }

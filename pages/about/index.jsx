@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import { testimonials } from "@/public/data";
+import Image from "next/image";
 
 export default function About(params) {
   const [loading, setIsLoading] = useState(true);
@@ -47,6 +48,7 @@ const Welcome = ({ useSetIsLoading }) => {
 
   return (
     <div className="flex flex-col p-4 justify-center items-center h-screen bg-focus-300 text-black">
+      {/* WELCOME PRESENT */}
       <button
         className="absolute right-4 top-3 btn btn-ghost font-spectralHeader text-sm"
         onClick={useSetIsLoading}
@@ -72,8 +74,10 @@ const Welcome = ({ useSetIsLoading }) => {
         here
         <br /> transcends any performance you&apos;ve seen before.
         <br /> You look around and see that the whole room is captivated.
-        <br />
-        <br />
+      </div>
+      <div
+        className={`font-spectralHeader text-lg uppercase text-center lg:w-2/3 animate-fade-in-up ${third}`}
+      >
         This is magic unfolding, this is mystical movement, this is Spiral
       </div>
     </div>
@@ -84,7 +88,13 @@ const AboutmeData = () => {
   return (
     <>
       <NavBar>
-        {/* WELCOME PRESENT */}
+        <Image
+          src="/images/hero.jpg"
+          alt="Spiral"
+          layout="fill"
+          objectFit="cover"
+          className="absolute z-0  min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
+        />
         {/* ABOUT ME */}
         <div className="h-fit w-full flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 lg:mt-4 mt-2">
           <div className="lg:ml-auto lg:mr-4 lg:w-4/5 lg:text-right h-fit sm:w-full text-justify">
