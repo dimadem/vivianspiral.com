@@ -3,39 +3,38 @@ import Image from "next/image";
 import Link from "next/link";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import {
-  BsArrowDownCircle,
-  BsArrowUpCircle,
-  BsCollection,
-} from "react-icons/bs";
+import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
+import { CiSquareMore } from "react-icons/ci";
 
 //! performance data
 import { performances } from "../public/data.js";
+import { performancePages } from "../public/data.js";
 
 //! bg images
-import hoopDance_bg from "../public/images/Hoop_Dance/bg/1_bg_rt_rmbg.png";
-import magicWand_bg from "../public/images/Magic_Wand/bg/3_bg_rt_rmbg.png";
-import ledGlowShow_bg from "../public/images/LED_Glow_Show/bg/3_bg_rt_rmbg.png";
+import hoopDance_bg from "../public/images/Hoop_Dance/bg/bg_sq_rmbg.png";
+import magicWand_bg from "../public/images/Magic_Wand/bg/bg_sq_rmbg.png";
+import ledGlowShow_bg from "../public/images/LED_Glow_Show/bg/bg_sq_rmbg.png";
 import aerialHoop_bg from "../public/images/Aerial_Hoop/bg/1_bg_rt_rmbg.png";
-import sphereDance_bg from "../public/images/Sphere_Dance/bg/4_bg_rt_rmbg.png";
+import sphereDance_bg from "../public/images/Sphere_Dance/bg/bg_sq_rmbg.png";
 import firePerformance_bg from "../public/images/Fire_Performance/bg/4_bg_rt_rmbg.png";
 
 export default function SliderScreen() {
   // hide description
   const [openDescription, setOpenDescription] = useState(true);
   const hide = openDescription ? "hidden" : "block";
+  const bg = openDescription ? null : "bg-neutral bg-opacity-80";
 
   return (
     <>
       <NavBar>
         <div className="carousel w-full h-screen z-0 animate-fade-in-up">
           {/* 1 */}
-          <div id="slide1" className="slide-frame">
+          <div id="slide1" className={`${bg} slide-frame`}>
             <Image
               src={hoopDance_bg}
-              alt="Hoop Dance"
+              alt="hoop_dance"
               priority
-              className="slide-bgImage"
+              className="slide-bgImage aspect-auto"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[0].header}
@@ -66,9 +65,9 @@ export default function SliderScreen() {
                     <BsArrowDownCircle size={32} />
                   </button>
                 )}
-                <button>
-                  <BsCollection size={32} />
-                </button>
+                <Link href={performancePages[0].href}>
+                  <CiSquareMore size={40} />
+                </Link>
               </div>
               <h4 className="slide-footer">{performances[0].footer}</h4>
             </div>
@@ -83,12 +82,12 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 2 */}
-          <div id="slide2" className="slide-frame">
+          <div id="slide2" className={`${bg} slide-frame`}>
             <Image
               src={magicWand_bg}
-              alt="Magic_Wand"
+              alt="magic_wand"
               priority
-              className="slide-bgImage"
+              className="slide-bgImage aspect-square"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[1].header}
@@ -118,9 +117,9 @@ export default function SliderScreen() {
                     <BsArrowDownCircle size={32} />
                   </button>
                 )}
-                <button>
-                  <BsCollection size={32} />
-                </button>
+                <Link href={performancePages[1].href}>
+                  <CiSquareMore size={40} />
+                </Link>
               </div>
               <h4 className="slide-footer"> {performances[1].footer}</h4>
             </div>
@@ -135,12 +134,12 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 3 */}
-          <div id="slide3" className="slide-frame">
+          <div id="slide3" className={`${bg} slide-frame`}>
             <Image
               src={ledGlowShow_bg}
-              alt="Led Glow Show"
+              alt="led_glow_show"
               priority
-              className="slide-bgImage"
+              className="slide-bgImage aspect-square"
             />
             <h1 className="z-10  text-focus-200 p-2">
               {performances[2].header}
@@ -179,9 +178,9 @@ export default function SliderScreen() {
                     <BsArrowDownCircle size={32} />
                   </button>
                 )}
-                <button>
-                  <BsCollection size={32} />
-                </button>
+                <Link href={performancePages[2].href}>
+                  <CiSquareMore size={40} />
+                </Link>
               </div>
               <h4 className="slide-footer"> {performances[2].footer}</h4>
             </div>
@@ -196,12 +195,12 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 4 */}
-          <div id="slide4" className="slide-frame">
+          <div id="slide4" className={`${bg} slide-frame`}>
             <Image
               src={aerialHoop_bg}
-              alt="Aerial Hoop"
+              alt="aerial_hoop"
               priority
-              className="slide-bgImage"
+              className="slide-bgImage aspect-auto"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[3].header}
@@ -231,9 +230,9 @@ export default function SliderScreen() {
                     <BsArrowDownCircle size={32} />
                   </button>
                 )}
-                <button>
-                  <BsCollection size={32} />
-                </button>
+                <Link href={performancePages[3].href}>
+                  <CiSquareMore size={40} />
+                </Link>
               </div>
               <h4 className="slide-footer"> {performances[3].footer}</h4>
             </div>
@@ -248,12 +247,12 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 5 */}
-          <div id="slide5" className="slide-frame">
+          <div id="slide5" className={`${bg} slide-frame`}>
             <Image
               src={sphereDance_bg}
-              alt="Sphere Dance"
+              alt="sphere_dance"
               priority
-              className="slide-bgImage"
+              className="slide-bgImage aspect-square"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[4].header}
@@ -282,9 +281,9 @@ export default function SliderScreen() {
                     <BsArrowDownCircle size={32} />
                   </button>
                 )}
-                <button>
-                  <BsCollection size={32} />
-                </button>
+                <Link href={performancePages[4].href}>
+                  <CiSquareMore size={40} />
+                </Link>
               </div>
               <h4 className="slide-footer"> {performances[4].footer}</h4>
             </div>
@@ -299,12 +298,12 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 6 */}
-          <div id="slide6" className="slide-frame">
+          <div id="slide6" className={`${bg} slide-frame`}>
             <Image
               src={firePerformance_bg}
-              alt="Fire Performance"
+              alt="fire_performance"
               priority
-              className="slide-bgImage"
+              className="slide-bgImage aspect-auto"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[5].header}
@@ -336,9 +335,9 @@ export default function SliderScreen() {
                     <BsArrowDownCircle size={32} />
                   </button>
                 )}
-                <button>
-                  <BsCollection size={32} />
-                </button>
+                <Link href={performancePages[5].href}>
+                  <CiSquareMore size={40} />
+                </Link>
               </div>
               <h4 className="slide-footer"> {performances[5].footer}</h4>
             </div>

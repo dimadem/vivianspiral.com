@@ -10,11 +10,17 @@ export const navigation = [
   },
 ];
 
+export const actKit = [
+  {
+    href: "https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0",
+  },
+];
+
 //! PERFORMANCE PAGES
 export const performancePages = [
   { name: "Hoop Dance", href: "/performance/hoop_dance" },
   { name: "Magic Wand", href: "/performance/magic_wand" },
-  { name: "Led Glow Show", href: "/perfomance/led_glow_show" },
+  { name: "Led Glow Show", href: "/performance/led_glow_show" },
   { name: "Aerial Hoop", href: "/performance/aerial_hoop" },
   { name: "Sphere Dance", href: "/performance/sphere_dance" },
   { name: "Fire Performance", href: "/performance/fire_performance" },

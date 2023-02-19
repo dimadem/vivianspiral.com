@@ -31,9 +31,9 @@ export default function WelcomeScreen({ useSetIsLoading }) {
           <br /> and Storytelling to Move Audiences Worldwide
         </h1>
       </div>
-      <div className="h-fit mb-48">
+      {/* <div className="h-fit mb-48">
         <SoundButtons />
-      </div>
+      </div> */}
     </div>
   );
 }

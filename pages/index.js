@@ -19,7 +19,7 @@ export default function Home() {
   }, [loading]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden overflow-y-auto">
       {loading ? (
         <WelcomeScreen useSetIsLoading={() => setIsLoading(false)} />
       ) : (

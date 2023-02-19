@@ -1,7 +1,9 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { performances } from "@/public/data";
+import { performances, actKit } from "@/public/data";
+import { BsCloudDownload } from "react-icons/bs";
+import Link from "next/link";
 
 export default function hoop_dance(params) {
   return (
@@ -25,7 +27,7 @@ export default function hoop_dance(params) {
 
         <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
@@ -35,7 +37,7 @@ export default function hoop_dance(params) {
               <br />
               Combining elements of classic circus, modern object manipulation,
               Native American hoop dance, and dervish- like spinning with her
-              own fierce, joyful passion, Spiral's hoop dance is unlike any
+              own fierce, joyful passion, Spiral&apos;s hoop dance is unlike any
               other.
               <br />
               <br />
@@ -51,7 +53,7 @@ export default function hoop_dance(params) {
             </p>
           </div>
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
@@ -63,17 +65,29 @@ export default function hoop_dance(params) {
               programmed with custom graphics to create bespoke light shows.
               <br />
               <br />
-              'Allure' Contemporary Hoop Dance Act- 5:36 minutes 'Ignition' LED
-              Hoop Dance Act- 4:43 minutes
+              &apos;Allure&apos; Contemporary Hoop Dance Act- 5:36 minutes
+              &apos;Ignition&apos; LED Hoop Dance Act- 4:43 minutes
               <br />
               <br />
               Hoop Dance act requires a minimum of 3.5 x 3.5 x 3.5
-              meters/10'x10'x10' feet.
+              meters/10&apos;x10&apos;x10&apos; feet.
               <br />
               <br />
               Band or DJ accompaniment and Walkabout performance can be adapted
               to smaller spaces.
             </p>
+          </div>
+        </div>
+        {/* act kit */}
+        <div className="flex flex-row w-full justify-center">
+          <div className="tooltip tooltip-bottom" data-tip="download Act Kit">
+            <Link
+              href={actKit[0].href}
+              target="_blank"
+              className="btn btn-ghost"
+            >
+              <BsCloudDownload size={25} />
+            </Link>
           </div>
         </div>
       </div>

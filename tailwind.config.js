@@ -28,6 +28,9 @@ module.exports = {
       focus: colors.gray, //gray-400
     },
     extend: {
+      backgroundImage: {
+        bg_image: "url('../public/bg_aboutme.jpg')",
+      },
       // BRAND fonts
       fontFamily: {
         montagaText: ["var(--font-montaga)", ...fontFamily.sans],

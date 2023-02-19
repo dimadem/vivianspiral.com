@@ -1,8 +1,10 @@
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { testimonials } from "@/public/data";
-import Image from "next/image";
+import { performancePages } from "@/public/data";
+import bg_image from "public/bg_aboutme.jpg";
 
 export default function About(params) {
   const [loading, setIsLoading] = useState(true);
@@ -56,29 +58,61 @@ const Welcome = ({ useSetIsLoading }) => {
         skip
       </button>
       <div
-        className={`font-spectralHeader text-lg uppercase text-center lg:w-2/3 animate-fade-in-up ${first}`}
+        className={`font-spectralHeader text-lg lg:text-xl text-center lg:w-2/3 animate-fade-in-up ${first}`}
       >
-        The lights go down and a hush falls over the crowd.
-        <br />A woman steps onto the stage and immediately you sense that
-        something is different.
-        <br /> This is an energy, a presence, that you&apos;ve never felt
-        before.
+        The lights go down and
+        <br />
+        a hush falls over
+        <br />
+        the crowd.
+        <br />
+        <br />
+        A woman steps onto the stage
+        <br />
+        and immediately you sense
+        <br />
+        that something is different.
+        <br />
+        <br />
+        This is an energy, a presence,
+        <br />
+        that you&apos;ve never felt before.
       </div>
       <div
-        className={`font-spectralHeader text-lg uppercase text-center lg:w-2/3 animate-fade-in-up ${second}`}
+        className={`font-spectralHeader text-lg lg:text-xl text-center lg:w-2/3 animate-fade-in-up ${second}`}
       >
-        She starts to move and energy ripples out into the audience.
-        <br /> In the middle of a mind-blowingly complex trick, she meets your
-        eyes and- in that instant- you get a jolt of
-        <br /> power, a glimpse of the mystery, a knowing that what is happening
-        here
-        <br /> transcends any performance you&apos;ve seen before.
-        <br /> You look around and see that the whole room is captivated.
+        She starts to move and energy ripples out
+        <br />
+        into the audience.
+        <br />
+        <br />
+        In the middle of a trick,
+        <br />
+        she meets your eyes for an instant
+        <br />
+        and you get a jolt of power,
+        <br />
+        a glimpse of mystery, a knowing that
+        <br />
+        what is happening here
+        <br />
+        transcends any performance
+        <br />
+        you&apos;ve seen before.
+        <br />
+        <br />
+        You look around and see that
+        <br />
+        the whole room is captivated…
       </div>
       <div
-        className={`font-spectralHeader text-lg uppercase text-center lg:w-2/3 animate-fade-in-up ${third}`}
+        className={`font-spectralHeader text-lg lg:text-xl text-center lg:w-2/3 animate-fade-in-up ${third}`}
       >
-        This is magic unfolding, this is mystical movement, this is Spiral
+        This is magic unfolding,
+        <br />
+        this is mystical movement,
+        <br />
+        this is Spiral.
       </div>
     </div>
   );
@@ -87,43 +121,52 @@ const Welcome = ({ useSetIsLoading }) => {
 const AboutmeData = () => {
   return (
     <NavBar>
-      {/* <Image
-          src="/images/hero.jpg"
-          alt="Spiral"
-          className="absolute z-0  min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2"
-        /> */}
-      {/* ABOUT ME */}
-      <div className="h-fit w-full flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 lg:mt-4 mt-2">
-        <div className="lg:ml-auto lg:mr-4 lg:w-4/5 lg:text-right h-fit sm:w-full text-justify">
-          Emanating an electric presence for groups of 20 or 20,000, Spiral has
-          wowed audiences all over the globe with her unique movement style and
-          commanding stage presence. An artist on the cutting edge of circus and
-          flow arts, Spiral is known worldwide for the fierce grace she brings
-          to the stage.
+      <div className="bg-center bg-fixed bg-no-repeat grayscale bg-bg_image">
+        {/* ABOUT ME */}
+        <div className="ml-auto bg-neutral bg-opacity-60 h-fit w-full lg:w-1/2 flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 lg:mt-4 mt-2">
+          <div className="pt-10 lg:ml-auto lg:mr-4 lg:text-justify lg:w-full h-fit sm:w-full text-justify ">
+            Emanating an electric presence for groups of 20 or 20,000, Spiral
+            has wowed audiences all over the globe with her unique movement
+            style and commanding stage presence. An artist on the cutting edge
+            of circus and flow arts, Spiral is known worldwide for the fierce
+            grace she brings to the stage.
+          </div>
+          <div className="divider"></div>
+          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content  bg-white bg-opacity-60">
+            A powerhouse performer in a wide variety of disciplines, Spiral
+            delivers elegant entertainment that leaves your guests amazed,
+            inspired, and delighted; making your event absolutely unforgettable.
+          </div>
+          <div className="divider"></div>
+          <div className="lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify">
+            Stunning on stage, Spiral&apos;s unique and powerful acts create
+            magic for any audience. As roaming, interactive entertainment,
+            Spiral&apos;s skillfully wielded hoops, magic wand, and acrobatic
+            sphere dance make for exciting, pop-up, improvised performance.
+          </div>
+          <div className="divider"></div>
+          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-white bg-opacity-70">
+            Her talents have mesmerized audiences at events for Cirque du
+            Soleil, the New York Academy of Art, NASA, Google, The Human Rights
+            Campaign, Polo Ralph Lauren, The American Medical Association,
+            Celebrity Cruises, and at GOP Varieté Theaters throughout Germany.
+          </div>
+          <div className="divider"></div>
         </div>
-        <div className="divider"></div>
-        <div className="lg:ml-auto lg:mr-4 lg:w-3/5 lg:text-right h-fit sm:w-full text-justify">
-          A powerhouse performer in a wide variety of disciplines, Spiral
-          delivers elegant entertainment that leaves your guests amazed,
-          inspired, and delighted; making your event absolutely unforgettable.
+        {/* PERFORMANCE PAGES */}
+        <div className="btn-group w-full flex flex-wrap justify-evenly p-2 bg-neutral bg-opacity-60">
+          {performancePages.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href}
+              target="_blank"
+              className="btn btn-ghost font-spectralHeader uppercase text-xl"
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
-        <div className="divider"></div>
-        <div className="lg:ml-auto lg:mr-4 lg:w-3/5 lg:text-right h-fit sm:w-full text-justify">
-          Stunning on stage, Spiral&apos;s unique and powerful acts create magic
-          for any audience. As roaming, interactive entertainment, Spiral&apos;s
-          skillfully wielded hoops, magic wand, and acrobatic sphere dance make
-          for exciting, pop-up, improvised performance.
-        </div>
-        <div className="divider"></div>
-        <div className="lg:ml-auto lg:mr-4 lg:w-3/5 lg:text-right h-fit sm:w-full text-justify">
-          Her talents have mesmerized audiences at events for Cirque du Soleil,
-          the New York Academy of Art, NASA, Google, The Human Rights Campaign,
-          Polo Ralph Lauren, The American Medical Association, Celebrity
-          Cruises, and at GOP Varieté Theaters throughout Germany.
-        </div>
-        <div className="divider"></div>
       </div>
-
       {/* TESTIMONIALS */}
       <div className="w-screen px-1 animate-fade-in-down">
         <div className="carousel w-full bg-primary-content rounded-lg">

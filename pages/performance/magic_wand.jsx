@@ -1,7 +1,9 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { performances } from "@/public/data";
+import { performances, actKit } from "@/public/data";
+import { BsCloudDownload } from "react-icons/bs";
+import Link from "next/link";
 
 export default function magic_wand(params) {
   return (
@@ -26,7 +28,7 @@ export default function magic_wand(params) {
 
         <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
@@ -36,9 +38,9 @@ export default function magic_wand(params) {
               <br />
               <br />
               The wand is truly magical; one moment Spiral spins it like a
-              pinwheel, the next moment it's floating over her palm in space,
-              only to fly out around her body in impossible arcs that defy
-              logic.
+              pinwheel, the next moment it&apos;s floating over her palm in
+              space, only to fly out around her body in impossible arcs that
+              defy logic.
               <br />
               <br />
               The LED light version of the wand is fully programmable with
@@ -47,13 +49,13 @@ export default function magic_wand(params) {
               <br />
               <br />
               realistic flames and dazzling geometric patterns to the birthday
-              girl's face or company logo. The magic wand works well as a
+              girl&apos;s face or company logo. The magic wand works well as a
               high-impact stage act, as well as ambient or walkabout
               entertainment.
             </p>
           </div>
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
@@ -63,13 +65,25 @@ export default function magic_wand(params) {
               For LED and Fire wand, relative darkness in the performance area
               will yield the most vibrant light show.
               <br /> <br />
-              'Spellcasting' LED Wand Act: 3 minutes
+              &apos;Spellcasting&apos; LED Wand Act: 3 minutes
               <br /> <br />
               Stage requirements: minimum 3.5mx3.5mx3m
               <br /> <br />
               Ambient performance can be accommodated to slightly smaller
               spaces.
             </p>
+          </div>
+        </div>
+        {/* act kit */}
+        <div className="flex flex-row w-full justify-center">
+          <div className="tooltip tooltip-bottom" data-tip="download Act Kit">
+            <Link
+              href={actKit[0].href}
+              target="_blank"
+              className="btn btn-ghost"
+            >
+              <BsCloudDownload size={25} />
+            </Link>
           </div>
         </div>
       </div>

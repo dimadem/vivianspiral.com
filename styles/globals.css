@@ -30,16 +30,19 @@
     @apply relative carousel-item w-full h-screen flex flex-col items-center justify-between overflow-hidden;
   }
   .slide-bgImage {
-    @apply absolute z-0  min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2;
+    @apply absolute z-0 min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2;
   }
   .slide-description {
-    @apply animate-fade-in-up font-montagaText text-xl text-justify w-[80%] lg:w-[90%] p-1 bg-neutral bg-opacity-60 h-full overflow-scroll;
+    @apply animate-fade-in-up font-montagaText text-xl text-justify w-[80%] lg:w-[90%] p-1 h-full overflow-scroll;
   }
   .slide-footer {
-    @apply text-center font-extralight pb-5 text-focus-200;
+    @apply text-center font-extralight text-focus-200;
   }
   .slide-navigation {
     @apply absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2;
+  }
+  .bg-video {
+    @apply absolute aspect-video -z-10 min-h-screen scale-125 lg:scale-100 transform -translate-y-1/2 top-1/2;
   }
 }
 

@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import Image from "next/image";
-import { performances } from "@/public/data";
+import { performances, actKit } from "@/public/data";
+import { BsCloudDownload } from "react-icons/bs";
+import Link from "next/link";
 
 export default function aerial_hoop(params) {
   return (
@@ -10,6 +12,7 @@ export default function aerial_hoop(params) {
         <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
           {performances[3].header}
         </h1>
+
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[3].images.map((image, index) => (
             <div key={index} className="carousel-item rounded-md">
@@ -25,7 +28,7 @@ export default function aerial_hoop(params) {
 
         <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
@@ -43,7 +46,7 @@ export default function aerial_hoop(params) {
             </p>
           </div>
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
@@ -56,6 +59,18 @@ export default function aerial_hoop(params) {
             <p className="text-primary-focus font-montagaText">
               Please contact for specific rigging questions.
             </p>
+          </div>
+        </div>
+        {/* act kit */}
+        <div className="flex flex-row w-full justify-center">
+          <div className="tooltip tooltip-bottom" data-tip="download Act Kit">
+            <Link
+              href={actKit[0].href}
+              target="_blank"
+              className="btn btn-ghost"
+            >
+              <BsCloudDownload size={25} />
+            </Link>
           </div>
         </div>
       </div>

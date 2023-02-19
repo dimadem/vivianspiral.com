@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./Footer";
-import { BsEnvelope, BsWhatsapp, BsCloudDownload } from "react-icons/bs";
+import { BsEnvelope, BsWhatsapp } from "react-icons/bs";
 import logo from "public/logo.webp";
 import { navigation } from "@/public/data";
+import { performancePages } from "@/public/data";
 
 export default function NavBar({ children }) {
   return (
@@ -20,12 +20,12 @@ export default function NavBar({ children }) {
                 height="84"
                 priority
                 className="h-9 sm:h-11 w-fit"
-                alt="Vivian Spiral Logo"
+                alt="logo"
               />
             </Link>
           </div>
           <div className="flex-none lg:hidden navbar-end">
-            <label htmlFor="my-drawer-3" className="btn btn-square">
+            <label htmlFor="my-drawer-3" className="btn btn-ghost">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -45,6 +45,31 @@ export default function NavBar({ children }) {
           <div className="flex-2 hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* <!-- Navbar menu content here --> */}
+              {/* PERFORMANCES */}
+              <div className="dropdown dropdown-end">
+                <label
+                  tabIndex={0}
+                  className="btn btn-ghost px-8 font-spectralHeader text-lg text-neutral-content"
+                >
+                  Performances
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-fit"
+                >
+                  {performancePages.map((item, index) => (
+                    <li key={index}>
+                      <Link
+                        href={item.href}
+                        className="font-montagaText w-full"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              {/* NAVIGATION */}
               <div className="btn-group">
                 {navigation.map((item, index) => (
                   <Link
@@ -57,7 +82,8 @@ export default function NavBar({ children }) {
                   </Link>
                 ))}
               </div>
-              <div className="btn-group">
+
+              <div className="btn-group mr-6">
                 {/* email */}
                 <div className="tooltip tooltip-bottom" data-tip="Send E-mail">
                   <Link
@@ -81,16 +107,6 @@ export default function NavBar({ children }) {
                     <BsWhatsapp size={25} />
                   </Link>
                 </div>
-                {/* act kit */}
-                <div className="tooltip tooltip-bottom" data-tip="Act Kit">
-                  <Link
-                    href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
-                    target="_blank"
-                    className="btn btn-ghost"
-                  >
-                    <BsCloudDownload size={25} />
-                  </Link>
-                </div>
               </div>
             </ul>
           </div>
@@ -111,42 +127,46 @@ export default function NavBar({ children }) {
               {item.name}
             </Link>
           ))}
-          <div className="divider w-1/4 ml-auto"></div>
+          <div className="divider w-1/4"></div>
+          {/* PERFORMANCE PAGES */}
+          <div className="flex flex-col justify-end">
+            <h3 className="sm:hidden text-neutral-content p-2 text-right">
+              PERFORMANCES
+            </h3>
+            {performancePages.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className="font-spectralHeader text-right text-base p-2 uppercase"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+          <div className="divider w-1/4"></div>
           {/* CONTACT */}
-          <div className="p-2 space-y-2">
-            <h3 className="sm:hidden text-focus-600">CONTACT</h3>
-            {/* EMAIL */}
-            <Link
-              href="mailto:info@vivianspiral.com"
-              target="_blank"
-              className="flex justify-end p-2 "
-            >
-              <BsEnvelope size={35} />
-            </Link>
-            {/* WHATSAPP */}
-            <Link
-              href="https://wa.me/15103094860"
-              target="_blank"
-              className="flex justify-end p-2"
-            >
-              <BsWhatsapp size={30} />
-            </Link>
+          <div className="">
+            <h3 className="sm:hidden text-focus-400 p-2">CONTACT</h3>
+            <div className="flex flex-row justify-end">
+              {/* EMAIL */}
+              <Link
+                href="mailto:info@vivianspiral.com"
+                target="_blank"
+                className="p-2"
+              >
+                <BsEnvelope size={35} />
+              </Link>
+              {/* WHATSAPP */}
+              <Link
+                href="https://wa.me/15103094860"
+                target="_blank"
+                className="p-2"
+              >
+                <BsWhatsapp size={30} />
+              </Link>
+            </div>
           </div>
           <div className="divider w-1/4 ml-auto"></div>
-          {/* ACT KIT */}
-          <div className="p-2 space-y-2">
-            <h3 className="text-focus-600 sm:hidden">ACT KIT</h3>
-            <Link
-              href="https://www.dropbox.com/sh/4o63ozvxwno8iab/AADM2JSfb2dlTRPkG0j2DMKAa?dl=0"
-              target="_blank"
-              className="flex justify-end p-2"
-            >
-              <BsCloudDownload size={30} />
-            </Link>
-          </div>
-          <div className="mt-auto w-full">
-            <Footer />
-          </div>
         </ul>
       </div>
     </div>

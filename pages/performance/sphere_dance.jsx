@@ -1,7 +1,9 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { performances } from "@/public/data";
+import { performances, actKit } from "@/public/data";
+import { BsCloudDownload } from "react-icons/bs";
+import Link from "next/link";
 
 export default function sphere_dance(params) {
   return (
@@ -26,13 +28,13 @@ export default function sphere_dance(params) {
 
         <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              The ball rolls across Spiral's body as if it's magnetized, leaving
-              your guests breathless. One moment it seems to magically float,
-              the next it becomes a high-powered dance partner.
+              The ball rolls across Spiral&apos;s body as if it&apos;s
+              magnetized, leaving your guests breathless. One moment it seems to
+              magically float, the next it becomes a high-powered dance partner.
               <br />
               <br />
               Moving the sphere all over the body and creating beautiful shapes,
@@ -41,21 +43,34 @@ export default function sphere_dance(params) {
             </p>
           </div>
           <div className="bg-neutral-focus p-4 rounded-md">
-            <h3 className="text-neutral-content text-center lg:text-right p-2">
+            <h3 className="text-neutral-content text-center p-2">
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
               Sphere dance is perfect for walkaround entertainment, particularl
-              y when space is at a minimum. UV Reactive, Acrylic ('crystal
-              ball'), Chrome, and Disco Mirror Ball versions available.
+              y when space is at a minimum. UV Reactive, Acrylic (&apos;crystal
+              ball&apos;), Chrome, and Disco Mirror Ball versions available.
               <br />
               <br />
-              Stage act requires a minimum of 3 x 3 meters/ 9'x9' feet.
+              Stage act requires a minimum of 3 x 3 meters/ 9&apos;x9&apos;
+              feet.
               <br />
               <br />
               Performance surface should be smooth, level, and clean to
               facilitate hand balance and floorwork skills.
             </p>
+          </div>
+        </div>
+        {/* act kit */}
+        <div className="flex flex-row w-full justify-center">
+          <div className="tooltip tooltip-bottom" data-tip="download Act Kit">
+            <Link
+              href={actKit[0].href}
+              target="_blank"
+              className="btn btn-ghost"
+            >
+              <BsCloudDownload size={25} />
+            </Link>
           </div>
         </div>
       </div>
