@@ -96,7 +96,7 @@ export default function NavBar({ children }) {
           </div>
         </div>
         {/* <!-- Page content here --> */}
-        <div className="w-full h-screen p-0 m-0">{children}</div>
+        <div className="p-0 m-0">{children}</div>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>

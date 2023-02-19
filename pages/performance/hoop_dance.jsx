@@ -1,0 +1,83 @@
+import Image from "next/image";
+import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
+import { performances } from "@/public/data";
+
+export default function hoop_dance(params) {
+  return (
+    <NavBar>
+      <div className="w-full h-fit p-2">
+        <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
+          {performances[0].header}
+        </h1>
+        <div className="carousel carousel-center rounded-box gap-5">
+          {performances[0].images.map((image, index) => (
+            <div key={index} className="carousel-item rounded-md">
+              <Image
+                src={image.url}
+                alt="hoop-dance-image"
+                width={image.width / 2}
+                height={image.height / 2}
+              />
+            </div>
+          ))}
+        </div>
+
+        <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
+          <div className="bg-neutral-focus p-4 rounded-md">
+            <h3 className="text-neutral-content text-center lg:text-right p-2">
+              DESCRIPTION
+            </h3>
+            <p className="text-primary-focus font-montagaText">
+              Illusion, acrobatics, and dance combine in a contemporary take on
+              the classic hula hoop.
+              <br />
+              <br />
+              Combining elements of classic circus, modern object manipulation,
+              Native American hoop dance, and dervish- like spinning with her
+              own fierce, joyful passion, Spiral's hoop dance is unlike any
+              other.
+              <br />
+              <br />
+              Beginning the act with her signature, powerful fusion of skirt
+              dance and hoop manipulation, Spiral conjures a mystical, alluring
+              energy that draws the audience into her magical world.
+              <br />
+              <br />
+              The release of her billowing skirt allows for an engaging,
+              high-energy display of contemporary hoop dance technique;
+              integrating precision, power, and musicality to create a truly
+              unique, moving performance.
+            </p>
+          </div>
+          <div className="bg-neutral-focus p-4 rounded-md">
+            <h3 className="text-neutral-content text-center lg:text-right p-2">
+              TECHNICAL INFORMATION
+            </h3>
+            <p className="text-primary-focus font-montagaText">
+              Hoop Dance is perfect fit for stage performance, live music
+              accompaniment, or walk-about entertainment.
+              <br />
+              <br />
+              Fire and LED Hoop versions are available. LED Hoops can be
+              programmed with custom graphics to create bespoke light shows.
+              <br />
+              <br />
+              'Allure' Contemporary Hoop Dance Act- 5:36 minutes 'Ignition' LED
+              Hoop Dance Act- 4:43 minutes
+              <br />
+              <br />
+              Hoop Dance act requires a minimum of 3.5 x 3.5 x 3.5
+              meters/10'x10'x10' feet.
+              <br />
+              <br />
+              Band or DJ accompaniment and Walkabout performance can be adapted
+              to smaller spaces.
+            </p>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </NavBar>
+  );
+}
