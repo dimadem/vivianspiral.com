@@ -252,12 +252,4 @@ export const gallery = [
     id: 21,
     src: "/images/Gallery/img_21.webp",
   },
-  {
-    id: 22,
-    src: "/images/Gallery/img_22.webp",
-  },
-  {
-    id: 23,
-    src: "/images/Gallery/img_23.webp",
-  },
 ];
