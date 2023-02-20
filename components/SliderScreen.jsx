@@ -34,7 +34,7 @@ export default function SliderScreen() {
               src={hoopDance_bg}
               alt="hoop_dance"
               priority
-              className="slide-bgImage aspect-auto"
+              className="slide-bgImage w-fit"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[0].header}
@@ -200,7 +200,7 @@ export default function SliderScreen() {
               src={aerialHoop_bg}
               alt="aerial_hoop"
               priority
-              className="slide-bgImage aspect-auto"
+              className="slide-bgImage w-fit"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[3].header}
@@ -303,7 +303,7 @@ export default function SliderScreen() {
               src={firePerformance_bg}
               alt="fire_performance"
               priority
-              className="slide-bgImage aspect-auto"
+              className="slide-bgImage w-fit"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[5].header}

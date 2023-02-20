@@ -15,6 +15,7 @@ export default function Images() {
         <div className="p-2 md:p-10 lg:p-20 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-3 lg:gap-5">
           {gallery.map((img, index) => (
             <ImageFrame
+              priority
               setOnClick={() => setOpen(true)}
               src={img.src}
               alt={img.id}
