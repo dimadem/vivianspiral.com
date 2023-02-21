@@ -200,7 +200,7 @@ export default function SliderScreen() {
               src={aerialHoop_bg}
               alt="aerial_hoop"
               priority
-              className="slide-bgImage w-fit"
+              className="slide-bgImage"
             />
             <h1 className="z-10 text-focus-200 p-2">
               {performances[3].header}
