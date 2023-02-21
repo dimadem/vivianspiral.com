@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import WelcomeScreen from "../components/WelcomeScreen";
 import VideoBackground from "../components/VideoBackground";
+import Head from "next/head";
 
 const SliderScreen = dynamic(() => import("../components/SliderScreen"));
 
@@ -19,14 +20,21 @@ export default function Home() {
   }, [loading]);
 
   return (
-    <div className="relative overflow-hidden overflow-y-auto">
-      {loading ? (
-        <WelcomeScreen useSetIsLoading={() => setIsLoading(false)} />
-      ) : (
-        <SliderScreen />
-      )}
-      {/* <SliderScreen /> */}
-      <VideoBackground />
-    </div>
+    <>
+      <Head>
+        <title>Pioneer of Hula Hoop Dance and Flow Arts</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <div className="relative overflow-hidden overflow-y-auto">
+        {loading ? (
+          <WelcomeScreen useSetIsLoading={() => setIsLoading(false)} />
+        ) : (
+          <SliderScreen />
+        )}
+        {/* <SliderScreen /> */}
+        <VideoBackground />
+      </div>
+    </>
   );
 }
