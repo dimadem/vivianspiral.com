@@ -1,9 +1,6 @@
 @tailwind base;
 
 @layer base {
-  html {
-    @apply w-full h-screen;
-  }
   h1 {
     @apply text-3xl sm:text-4xl uppercase font-spectralHeader;
   }
@@ -42,7 +39,7 @@
     @apply absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2;
   }
   .bg-video {
-    @apply absolute aspect-video -z-10 min-h-screen scale-125 transform -translate-y-1/2 top-1/2;
+    @apply absolute -z-10 h-full w-full object-cover saturate-100 p-0 m-0 border-none;
   }
 }
 

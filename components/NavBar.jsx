@@ -16,10 +16,10 @@ export default function NavBar({ children }) {
             <Link href="/">
               <Image
                 src={logo}
-                width="180"
-                height="84"
+                width={"180"}
+                height={"84"}
                 priority
-                className="h-9 sm:h-11 w-fit"
+                className="h-9 w-auto sm:h-11"
                 alt="logo"
               />
             </Link>
@@ -112,7 +112,7 @@ export default function NavBar({ children }) {
           </div>
         </div>
         {/* <!-- Page content here --> */}
-        <div className="p-0 m-0">{children}</div>
+        <div>{children}</div>
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
