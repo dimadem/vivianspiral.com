@@ -26,7 +26,7 @@ export default function Home() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="relative overflow-hidden overflow-y-auto">
+      <main className="relative flex shrink-0 h-[100vh]">
         {loading ? (
           <WelcomeScreen useSetIsLoading={() => setIsLoading(false)} />
         ) : (
@@ -34,7 +34,7 @@ export default function Home() {
         )}
         {/* <SliderScreen /> */}
         <VideoBackground />
-      </div>
+      </main>
     </>
   );
 }

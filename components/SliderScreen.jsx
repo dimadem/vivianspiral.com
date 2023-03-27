@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
 import { CiSquareMore } from "react-icons/ci";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 //! performance data
 import { performances } from "../public/data.js";
@@ -27,7 +28,7 @@ export default function SliderScreen() {
   return (
     <>
       <NavBar>
-        <div className="carousel w-full h-screen z-0 animate-fade-in-up">
+        <div className="carousel h-full z-0 animate-fade-in-up">
           {/* 1 */}
           <div id="slide1" className={`${bg} slide-frame`}>
             <Image
@@ -74,10 +75,10 @@ export default function SliderScreen() {
             {/* Slide Navigation */}
             <div className="slide-navigation">
               <Link href="#slide6" className="btn-ghost">
-                ❮
+                <FiChevronLeft size={32} />
               </Link>
               <Link href="#slide2" className="btn-ghost">
-                ❯
+                <FiChevronRight size={32} />
               </Link>
             </div>
           </div>
@@ -126,10 +127,10 @@ export default function SliderScreen() {
             {/* Slide Navigation */}
             <div className="slide-navigation">
               <Link href="#slide1" className="btn-ghost">
-                ❮
+                <FiChevronLeft size={32} />
               </Link>
               <Link href="#slide3" className="btn-ghost">
-                ❯
+                <FiChevronRight size={32} />
               </Link>
             </div>
           </div>
@@ -187,10 +188,10 @@ export default function SliderScreen() {
             {/* Slide Navigation */}
             <div className="slide-navigation">
               <Link href="#slide2" className="btn-ghost">
-                ❮
+                <FiChevronLeft size={32} />
               </Link>
               <Link href="#slide4" className="btn-ghost">
-                ❯
+                <FiChevronRight size={32} />
               </Link>
             </div>
           </div>
@@ -239,10 +240,10 @@ export default function SliderScreen() {
             {/* Slide Navigation */}
             <div className="slide-navigation">
               <Link href="#slide3" className="btn-ghost">
-                ❮
+                <FiChevronLeft size={32} />
               </Link>
               <Link href="#slide5" className="btn-ghost">
-                ❯
+                <FiChevronRight size={32} />
               </Link>
             </div>
           </div>
@@ -290,10 +291,10 @@ export default function SliderScreen() {
             {/* Slide Navigation */}
             <div className="slide-navigation">
               <Link href="#slide4" className="btn-ghost">
-                ❮
+                <FiChevronLeft size={32} />
               </Link>
               <Link href="#slide6" className="btn-ghost">
-                ❯
+                <FiChevronRight size={32} />
               </Link>
             </div>
           </div>
@@ -344,10 +345,10 @@ export default function SliderScreen() {
             {/* Slide Navigation */}
             <div className="slide-navigation">
               <Link href="#slide5" className="btn-ghost">
-                ❮
+                <FiChevronLeft size={32} />
               </Link>
               <Link href="#slide1" className="btn-ghost">
-                ❯
+                <FiChevronRight size={32} />
               </Link>
             </div>
           </div>
