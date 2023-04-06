@@ -9,9 +9,10 @@ export default function sphere_dance(params) {
   return (
     <NavBar>
       <div className="w-full h-fit p-2">
-        <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
-          {performances[4].header}
-        </h1>
+        <div className="w-full text-center lg:p-10 p-4">
+          <h1 className="text-primary-focus">{performances[4].header}</h1>
+          <h5 className="text-neutral-content">{performances[4].footer}</h5>
+        </div>
         <div className="carousel carousel-center rounded-box">
           {performances[4].images.map((image, index) => (
             <div key={index} className="carousel-item rounded-md">
@@ -47,17 +48,18 @@ export default function sphere_dance(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              Sphere dance is perfect for walkaround entertainment, particularl
-              y when space is at a minimum. UV Reactive, Acrylic (&apos;crystal
-              ball&apos;), Chrome, and Disco Mirror Ball versions available.
+              <span className="text-neutral-content">&apos;Cycles&apos;</span>{" "}
+              Contemporary Hoop Dance Act- 5:36 minutes &apos;Ignition&apos; LED
+              Hoop Dance Act- 4:43 minutes
               <br />
               <br />
-              Stage act requires a minimum of 3 x 3 meters/ 9&apos;x9&apos;
-              feet.
+              Hoop Dance can be combined with other acts to create longer shows
+              between 10-25 minutes.
               <br />
               <br />
-              Performance surface should be smooth, level, and clean to
-              facilitate hand balance and floorwork skills.
+              Hoop Dance Stage acts require a minimum of 3.5 x 3.5 x 3.5
+              meters/10&apos;x10&apos;x10&apos; feet. Band or DJ accompaniment
+              and Walkabout performances can occur in smaller spaces.
             </p>
           </div>
         </div>

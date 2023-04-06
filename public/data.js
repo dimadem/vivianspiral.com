@@ -18,12 +18,30 @@ export const actKit = [
 
 //! PERFORMANCE PAGES
 export const performancePages = [
-  { name: "Hoop Dance", href: "/performance/hoop_dance" },
-  { name: "Magic Wand", href: "/performance/magic_wand" },
-  { name: "Led Glow Show", href: "/performance/led_glow_show" },
-  { name: "Aerial Hoop", href: "/performance/aerial_hoop" },
-  { name: "Sphere Dance", href: "/performance/sphere_dance" },
-  { name: "Fire Performance", href: "/performance/fire_performance" },
+  {
+    name: "Hoop",
+    href: "/performance/hoop_dance",
+  },
+  {
+    name: "Magic",
+    href: "/performance/magic_wand",
+  },
+  {
+    name: "Led",
+    href: "/performance/led_glow_show",
+  },
+  {
+    name: "Aerial",
+    href: "/performance/aerial_hoop",
+  },
+  {
+    name: "Sphere",
+    href: "/performance/sphere_dance",
+  },
+  {
+    name: "Fire",
+    href: "/performance/fire_performance",
+  },
 ];
 
 //! PERFORMANCES

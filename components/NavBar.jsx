@@ -49,19 +49,19 @@ export default function NavBar({ children }) {
               <div className="dropdown dropdown-end">
                 <label
                   tabIndex={0}
-                  className="btn btn-ghost px-8 font-spectralHeader text-lg text-neutral-content"
+                  className="btn btn-ghost px-8 font-sans text-lg text-neutral-content"
                 >
                   Performances
                 </label>
                 <ul
                   tabIndex={0}
-                  className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-fit"
+                  className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
                   {performancePages.map((item, index) => (
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="font-montagaText w-full"
+                        className="font-sans w-full uppercase"
                       >
                         {item.name}
                       </Link>
@@ -73,7 +73,7 @@ export default function NavBar({ children }) {
               <div className="btn-group">
                 {navigation.map((item, index) => (
                   <Link
-                    className="btn btn-ghost px-8 font-spectralHeader text-lg"
+                    className="btn btn-ghost px-8 font-sans text-lg"
                     href={item.href}
                     id={index}
                     key={index}

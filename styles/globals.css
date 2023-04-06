@@ -2,26 +2,27 @@
 
 @layer base {
   h1 {
-    @apply text-3xl sm:text-4xl uppercase font-spectralHeader;
+    @apply text-3xl sm:text-4xl uppercase font-sans;
   }
   h2 {
-    @apply text-2xl sm:text-3xl uppercase font-spectralHeader;
+    @apply text-2xl sm:text-3xl uppercase font-sans;
   }
   h3 {
-    @apply text-xl sm:text-2xl uppercase font-spectralHeader;
+    @apply text-xl sm:text-2xl uppercase font-sans;
   }
   h4 {
-    @apply text-lg sm:text-xl uppercase font-spectralHeader;
+    @apply text-lg sm:text-xl uppercase font-sans;
   }
   h5 {
-    @apply text-base sm:text-lg uppercase font-spectralHeader;
+    @apply text-base sm:text-lg uppercase font-sans;
   }
   h6 {
-    @apply text-sm sm:text-base uppercase font-spectralHeader;
+    @apply text-sm sm:text-base uppercase font-sans;
   }
 }
 
 @tailwind components;
+
 @layer components {
   .slide-frame {
     @apply relative carousel-item w-full h-screen flex flex-col items-center justify-between overflow-hidden;
@@ -30,10 +31,13 @@
     @apply absolute z-0 min-w-fit lg:w-fit md:w-fit h-screen transform -translate-y-1/2 top-1/2;
   }
   .slide-description {
-    @apply animate-fade-in-up font-montagaText text-xl text-justify w-[80%] lg:w-[90%] p-1 h-full overflow-scroll;
+    @apply animate-fade-in-up font-montagaText text-xl text-justify w-[80%] lg:w-[40%] p-1 h-full overflow-scroll;
+  }
+  .slide-title {
+    @apply z-10 text-focus-200 p-2 font-spectralHeader;
   }
   .slide-footer {
-    @apply text-center font-extralight text-focus-200;
+    @apply text-center font-extralight text-focus-200 font-spectralHeader;
   }
   .slide-navigation {
     @apply absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2;

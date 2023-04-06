@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { testimonials } from "@/public/data";
 import { performancePages } from "@/public/data";
-import bg_image from "public/bg_aboutme.jpg";
 
 export default function About(params) {
   const [loading, setIsLoading] = useState(true);
@@ -121,7 +120,7 @@ const Welcome = ({ useSetIsLoading }) => {
 const AboutmeData = () => {
   return (
     <NavBar>
-      <div className="bg-center bg-fixed bg-no-repeat grayscale bg-bg_image">
+      <div className="bg-center bg-fixed bg-no-repeat bg-bg_image">
         {/* ABOUT ME */}
         <div className="ml-auto bg-neutral bg-opacity-60 h-fit w-full lg:w-1/2 flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 lg:mt-4 mt-2">
           <div className="pt-10 lg:ml-auto lg:mr-4 lg:text-justify lg:w-full h-fit sm:w-full text-justify ">
@@ -132,7 +131,7 @@ const AboutmeData = () => {
             grace she brings to the stage.
           </div>
           <div className="divider"></div>
-          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content  bg-white bg-opacity-60">
+          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-neutral-content bg-opacity-60">
             A powerhouse performer in a wide variety of disciplines, Spiral
             delivers elegant entertainment that leaves your guests amazed,
             inspired, and delighted; making your event absolutely unforgettable.
@@ -145,11 +144,12 @@ const AboutmeData = () => {
             sphere dance make for exciting, pop-up, improvised performance.
           </div>
           <div className="divider"></div>
-          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-white bg-opacity-70">
+          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-neutral-content bg-opacity-70">
             Her talents have mesmerized audiences at events for Cirque du
             Soleil, the New York Academy of Art, NASA, Google, The Human Rights
             Campaign, Polo Ralph Lauren, The American Medical Association,
-            Celebrity Cruises, and at GOP Varieté Theaters throughout Germany.
+            Celebrity Cruises, at varieté theaters throughout Germany, and many
+            more.
           </div>
           <div className="divider"></div>
         </div>

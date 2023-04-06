@@ -9,9 +9,10 @@ export default function fire_performance(params) {
   return (
     <NavBar>
       <div className="w-full h-fit p-2">
-        <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
-          {performances[5].header}
-        </h1>
+        <div className="w-full text-center lg:p-10 p-4">
+          <h1 className="text-primary-focus">{performances[5].header}</h1>
+          <h5 className="text-neutral-content">{performances[5].footer}</h5>
+        </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[5].images.map((image, index) => (
             <div key={index} className="carousel-item rounded-md">
@@ -31,17 +32,12 @@ export default function fire_performance(params) {
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              Fire; an element so primal, it arouses instant fascination. The
-              element of danger combined with stunning skills creates
-              high-impact performances that leave your guests in awe. <br />
-              <br />
-              Spiral has been dancing with Fire for over 15 years and is an
-              expert performer of this mesmerizing, elemental art form.
-              Delighting at the enchanting interplay of risk and technique, her
-              fire performances are one of a kind. <br />
-              <br />
-              See Spiral perform at the European Juggling Convention Fire Gala
-              in Lublin, Poland.
+              <Link href={"https://youtu.be/ltxjWgqRKDs"} title="_blank">
+                <span className="text-neutral-content">
+                  See Spiral perform at the European Juggling Convention Fire
+                  Gala in Lublin, Poland.
+                </span>
+              </Link>
             </p>
           </div>
           <div className="bg-neutral-focus p-4 rounded-md">
@@ -49,24 +45,21 @@ export default function fire_performance(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              Spiral performs with Fire hoops, wand, candles, and skirt.
-              <br />
-              <br />
-              Spiral Circus Arts can also provide performers in a range of other
-              fire arts: poi, staff, jugglers, and fans.
-              <br />
-              <br />
-              Solo fire shows range from 3-15 minutes. Duo and Group acts up to
-              45 minutes. Fire shows require a minimum of 3.5 x 3.5 x 3.5
-              meters/10&apos;x10&apos;x10&apos; feet.
-              <br />
-              <br />
-              For Fire shows, relative darkness in the performance area will
-              yield the most vibrant flames.
-              <br />
-              <br />
-              Spiral is fully covered by professional libility insurance for all
-              performances, including fire.
+              <span className="text-neutral-content">
+                Spiral performs with Fire Hoops, Wand, Candles, and Skirt. For
+                Fire shows, relative darkness in the performance area will yield
+                the most vibrant flames.
+                <br />
+                <br />
+                Fire shows range from 3-17 minutes. Fire shows require a minimum
+                of 3.5 x 3.5 x 3.5 meters/10&apos;x10&apos;x10&apos; feet and a
+                dedicated fire safety assistant. Client is responsible for all
+                required permits.
+                <br />
+                <br />
+                Spiral is fully covered by professional liability insurance for
+                all performances, including fire.
+              </span>
             </p>
           </div>
         </div>

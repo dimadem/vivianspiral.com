@@ -9,9 +9,10 @@ export default function hoop_dance(params) {
   return (
     <NavBar>
       <div className="w-full h-fit p-2">
-        <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
-          {performances[0].header}
-        </h1>
+        <div className="w-full text-center p-4 lg:p-10">
+          <h1 className="text-primary-focus">{performances[0].header}</h1>
+          <h5 className="text-neutral-content">{performances[0].footer}</h5>
+        </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[0].images.map((image, index) => (
             <div key={index} className="carousel-item rounded-md">
@@ -24,7 +25,6 @@ export default function hoop_dance(params) {
             </div>
           ))}
         </div>
-
         <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
           <div className="bg-neutral-focus p-4 rounded-md">
             <h3 className="text-neutral-content text-center p-2">
@@ -57,24 +57,23 @@ export default function hoop_dance(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              Hoop Dance is perfect fit for stage performance, live music
-              accompaniment, or walk-about entertainment.
+              <span className="text-neutral-content">&apos;Cycles&apos;</span>{" "}
+              Contemporary Hoop Dance Act- 5:36 minutes &apos;Ignition&apos; LED
+              Hoop Dance Act- 4:43 minutes
               <br />
               <br />
-              Fire and LED Hoop versions are available. LED Hoops can be
-              programmed with custom graphics to create bespoke light shows.
+              Hoop Dance can be combined with other acts to create longer shows
+              between 10-25 minutes.
               <br />
               <br />
-              &apos;Allure&apos; Contemporary Hoop Dance Act- 5:36 minutes
-              &apos;Ignition&apos; LED Hoop Dance Act- 4:43 minutes
-              <br />
-              <br />
-              Hoop Dance act requires a minimum of 3.5 x 3.5 x 3.5
-              meters/10&apos;x10&apos;x10&apos; feet.
-              <br />
-              <br />
-              Band or DJ accompaniment and Walkabout performance can be adapted
-              to smaller spaces.
+              <span className="text-neutral-content">
+                Hoop Dance Stage acts require
+              </span>{" "}
+              a minimum of 3.5 x 3.5 x 3.5 meters/10&apos;x10&apos;x10&apos;
+              feet. Band or DJ accompaniment and Walkabout performances{" "}
+              <span className="text-neutral-content">
+                can occur in smaller spaces.
+              </span>
             </p>
           </div>
         </div>

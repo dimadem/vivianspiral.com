@@ -9,9 +9,10 @@ export default function magic_wand(params) {
   return (
     <NavBar>
       <div className="w-full h-fit p-2">
-        <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
-          {performances[1].header}
-        </h1>
+        <div className="w-full text-center lg:p-10 p-4">
+          <h1 className="text-primary-focus">{performances[1].header}</h1>
+          <h5 className="text-neutral-content">{performances[1].footer}</h5>
+        </div>
         <div className="carousel carousel-center rounded-box">
           {performances[1].images.map((image, index) => (
             <div key={index} className="carousel-item rounded-md">
@@ -32,26 +33,15 @@ export default function magic_wand(params) {
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              Putting a modern twist on a magic trick from the turn of the
-              century, this mesmerizing prop combines grace, elegance, illusion,
-              and dance, leaving audiences perplexed and enchanted.
-              <br />
-              <br />
-              The wand is truly magical; one moment Spiral spins it like a
-              pinwheel, the next moment it&apos;s floating over her palm in
-              space, only to fly out around her body in impossible arcs that
-              defy logic.
-              <br />
-              <br />
               The LED light version of the wand is fully programmable with
               vibrant, customizable graphics. Stunning imagery shifts and
               changes to the beat of the music; displaying everything from
-              <br />
-              <br />
               realistic flames and dazzling geometric patterns to the birthday
-              girl&apos;s face or company logo. The magic wand works well as a
-              high-impact stage act, as well as ambient or walkabout
-              entertainment.
+              girl's face or company logo.
+              <br />
+              <br />
+              The magic wand works well as a high-impact stage act, as well as
+              ambient or walkabout entertainment.
             </p>
           </div>
           <div className="bg-neutral-focus p-4 rounded-md">
@@ -60,17 +50,25 @@ export default function magic_wand(params) {
             </h3>
             <p className="text-primary-focus font-montagaText">
               LED light, Holographic daytime, and Fire versions of this prop are
-              available.
-              <br /> <br />
-              For LED and Fire wand, relative darkness in the performance area
-              will yield the most vibrant light show.
-              <br /> <br />
-              &apos;Spellcasting&apos; LED Wand Act: 3 minutes
-              <br /> <br />
-              Stage requirements: minimum 3.5mx3.5mx3m
-              <br /> <br />
-              Ambient performance can be accommodated to slightly smaller
-              spaces.
+              available. For LED and Fire wand{" "}
+              <span className="text-neutral-content">performances,</span>{" "}
+              relative darkness in the performance area will yield the most
+              vibrant light show.
+              <br />
+              <br />
+              &apos;Spellcasting&apos; LED Wand Act:{" "}
+              <span className="text-neutral-content">4:24 minutes</span>
+              <br />
+              <br />
+              <span className="text-neutral-content">
+                {" "}
+                Magic Wand can be combined with other acts to create longer
+                shows between 10-25 minutes.
+              </span>
+              <br />
+              <br />
+              Stage requirements: minimum 3.5mx3.5mx3m Ambient performance can
+              be accommodated to slightly smaller spaces.
             </p>
           </div>
         </div>

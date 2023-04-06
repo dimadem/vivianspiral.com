@@ -6,6 +6,8 @@ import Footer from "./Footer";
 import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
 import { CiSquareMore } from "react-icons/ci";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiInfo } from "react-icons/fi";
+import { BsInfoCircle } from "react-icons/bs";
 
 //! performance data
 import { performances } from "../public/data.js";
@@ -37,12 +39,10 @@ export default function SliderScreen() {
               priority
               className="slide-bgImage w-fit"
             />
-            <h1 className="z-10 text-focus-200 p-2">
-              {performances[0].header}
-            </h1>
+            <h1 className="slide-title">{performances[0].header}</h1>
 
             <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
             >
               Illusion, acrobatics, and dance combine in a contemporary take on
               the classic hula hoop.
@@ -59,7 +59,7 @@ export default function SliderScreen() {
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
-                    <BsArrowUpCircle size={32} />
+                    <BsInfoCircle size={32} />
                   </button>
                 ) : (
                   <button onClick={() => setOpenDescription(true)}>
@@ -90,11 +90,9 @@ export default function SliderScreen() {
               priority
               className="slide-bgImage aspect-square"
             />
-            <h1 className="z-10 text-focus-200 p-2">
-              {performances[1].header}
-            </h1>
+            <h1 className="slide-title">{performances[1].header}</h1>
             <p
-              className={`${hide} z-10 flex flex-col justify-center slide-description`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
             >
               Putting a modern twist on a magic trick from the turn of the
               century, this mesmerizing prop combines grace, elegance, illusion,
@@ -111,7 +109,7 @@ export default function SliderScreen() {
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
-                    <BsArrowUpCircle size={32} />
+                    <BsInfoCircle size={32} />
                   </button>
                 ) : (
                   <button onClick={() => setOpenDescription(true)}>
@@ -142,11 +140,9 @@ export default function SliderScreen() {
               priority
               className="slide-bgImage aspect-square"
             />
-            <h1 className="z-10  text-focus-200 p-2">
-              {performances[2].header}
-            </h1>
+            <h1 className="slide-title">{performances[2].header}</h1>
             <p
-              className={`${hide} z-10 flex flex-col justify-center slide-description`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
             >
               <br />
               <br />
@@ -203,11 +199,9 @@ export default function SliderScreen() {
               priority
               className="slide-bgImage"
             />
-            <h1 className="z-10 text-focus-200 p-2">
-              {performances[3].header}
-            </h1>
+            <h1 className="slide-title">{performances[3].header}</h1>
             <p
-              className={`${hide} z-10 flex flex-col justify-center slide-description`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
             >
               Strength and grace combine to create beautiful cirque-style
               performance in the air. With stunning presence, strength and
@@ -224,7 +218,7 @@ export default function SliderScreen() {
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
-                    <BsArrowUpCircle size={32} />
+                    <BsInfoCircle size={32} />
                   </button>
                 ) : (
                   <button onClick={() => setOpenDescription(true)}>
@@ -255,11 +249,9 @@ export default function SliderScreen() {
               priority
               className="slide-bgImage aspect-square"
             />
-            <h1 className="z-10 text-focus-200 p-2">
-              {performances[4].header}
-            </h1>
+            <h1 className="slide-title">{performances[4].header}</h1>
             <p
-              className={`${hide} z-10 flex flex-col justify-center slide-description`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
             >
               The ball rolls across Spiral&apos;s body as if it&apos;s
               magnetized, leaving your guests breathless. One moment it seems to
@@ -275,7 +267,7 @@ export default function SliderScreen() {
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
-                    <BsArrowUpCircle size={32} />
+                    <BsInfoCircle size={32} />
                   </button>
                 ) : (
                   <button onClick={() => setOpenDescription(true)}>
@@ -306,11 +298,9 @@ export default function SliderScreen() {
               priority
               className="slide-bgImage w-fit"
             />
-            <h1 className="z-10 text-focus-200 p-2">
-              {performances[5].header}
-            </h1>
+            <h1 className="slide-title">{performances[5].header}</h1>
             <p
-              className={`${hide} z-10 flex flex-col justify-center slide-description`}
+              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
             >
               Fire; an element so primal, it arouses instant fascination. The
               element of danger combined with stunning skills creates
@@ -329,7 +319,7 @@ export default function SliderScreen() {
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
-                    <BsArrowUpCircle size={32} />
+                    <BsInfoCircle size={32} />
                   </button>
                 ) : (
                   <button onClick={() => setOpenDescription(true)}>

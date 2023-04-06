@@ -9,10 +9,10 @@ export default function aerial_hoop(params) {
   return (
     <NavBar>
       <div className="w-full h-fit p-2">
-        <h1 className="w-full text-center p-4 lg:p-10 text-primary-focus">
-          {performances[3].header}
-        </h1>
-
+        <div className="w-full text-center lg:p-10 p-4">
+          <h1 className="text-primary-focus">{performances[3].header}</h1>
+          <h5 className="text-neutral-content">{performances[3].footer}</h5>
+        </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[3].images.map((image, index) => (
             <div key={index} className="carousel-item rounded-md">
@@ -25,7 +25,6 @@ export default function aerial_hoop(params) {
             </div>
           ))}
         </div>
-
         <div className="md:p-10 lg:p-20 grid sm:grid-cols-2 grid-cols-1 gap-3 md:gap-3 lg:gap-5">
           <div className="bg-neutral-focus p-4 rounded-md">
             <h3 className="text-neutral-content text-center p-2">
