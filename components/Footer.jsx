@@ -1,5 +1,7 @@
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
+import logo from "../public/netart_logo.svg";
+import Image from "next/image";
 
 export default function Footer(params) {
   return (
@@ -23,7 +25,13 @@ export default function Footer(params) {
       <div className="items-center grid-flow-col">
         <p>made by</p>
         <Link href="https://www.netart.live" target="_blank">
-          <p className="hover:text-white">netart</p>
+          <Image
+            className="invert"
+            src={logo}
+            alt="netart"
+            width={30}
+            height={30}
+          />
         </Link>
       </div>
     </footer>
