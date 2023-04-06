@@ -37,7 +37,7 @@ export default function magic_wand(params) {
               vibrant, customizable graphics. Stunning imagery shifts and
               changes to the beat of the music; displaying everything from
               realistic flames and dazzling geometric patterns to the birthday
-              girl's face or company logo.
+              girl&apos;s face or company logo.
               <br />
               <br />
               The magic wand works well as a high-impact stage act, as well as
