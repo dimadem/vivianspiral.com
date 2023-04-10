@@ -21,12 +21,16 @@ export default function WelcomeScreen({ useSetIsLoading }) {
         skip
       </button>
       <div className="mt-44 h-full">
-        <h1 className={`uppercase text-center animate-fade-in-up ${first}`}>
+        <h1
+          className={`uppercase font-spectralHeader text-center animate-fade-in-up ${first}`}
+        >
           Pioneer of
           <br /> Hula Hoop Dance
           <br /> and Flow Arts
         </h1>
-        <h1 className={`uppercase text-center animate-fade-in-up ${second}`}>
+        <h1
+          className={`uppercase font-spectralHeader text-center animate-fade-in-up ${second}`}
+        >
           Blending Dance, Circus, Acrobatics, Object Manipulation,
           <br /> and Storytelling to Move Audiences Worldwide
         </h1>

@@ -35,6 +35,7 @@ module.exports = {
       fontFamily: {
         montagaText: ["var(--font-montaga)", ...fontFamily.sans],
         spectralHeader: ["var(--font-spectral)", ...fontFamily.sans],
+        josefinHeader: ["var(--font-josefin)", ...fontFamily.sans],
       },
       // animation
       keyframes: {

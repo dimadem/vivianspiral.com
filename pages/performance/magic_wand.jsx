@@ -11,7 +11,9 @@ export default function magic_wand(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center lg:p-10 p-4">
           <h1 className="text-primary-focus">{performances[1].header}</h1>
-          <h5 className="text-neutral-content">{performances[1].footer}</h5>
+          <h4 className="text-neutral-content normal-case">
+            {performances[1].footer}
+          </h4>
         </div>
         <div className="carousel carousel-center rounded-box">
           {performances[1].images.map((image, index) => (

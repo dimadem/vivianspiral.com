@@ -49,7 +49,7 @@ export default function NavBar({ children }) {
               <div className="dropdown dropdown-end">
                 <label
                   tabIndex={0}
-                  className="btn btn-ghost px-8 font-sans text-lg text-neutral-content"
+                  className="btn btn-ghost px-8 font-josefinHeader text-lg text-neutral-content"
                 >
                   Performances
                 </label>
@@ -61,7 +61,7 @@ export default function NavBar({ children }) {
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="font-sans w-full uppercase"
+                        className="font-josefinHeader w-full uppercase"
                       >
                         {item.name}
                       </Link>
@@ -73,7 +73,7 @@ export default function NavBar({ children }) {
               <div className="btn-group">
                 {navigation.map((item, index) => (
                   <Link
-                    className="btn btn-ghost px-8 font-sans text-lg"
+                    className="btn btn-ghost px-8 font-josefinHeader text-lg"
                     href={item.href}
                     id={index}
                     key={index}

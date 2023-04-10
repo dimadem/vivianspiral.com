@@ -11,7 +11,9 @@ export default function fire_performance(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center lg:p-10 p-4">
           <h1 className="text-primary-focus">{performances[5].header}</h1>
-          <h5 className="text-neutral-content">{performances[5].footer}</h5>
+          <h4 className="text-neutral-content normal-case">
+            {performances[5].footer}
+          </h4>
         </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[5].images.map((image, index) => (

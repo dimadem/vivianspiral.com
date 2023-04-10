@@ -11,7 +11,9 @@ export default function led_glow_show(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center lg:p-10 p-4">
           <h1 className="text-primary-focus">{performances[2].header}</h1>
-          <h5 className="text-neutral-content">{performances[2].footer}</h5>
+          <h4 className="text-neutral-content normal-case">
+            {performances[2].footer}
+          </h4>
         </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[2].images.map((image, index) => (
