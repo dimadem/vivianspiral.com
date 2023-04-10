@@ -23,7 +23,7 @@ export const performancePages = [
     href: "/performance/hoop_dance",
   },
   {
-    name: "Magic",
+    name: "Wand",
     href: "/performance/magic_wand",
   },
   {
@@ -69,8 +69,7 @@ export const performances = [
     header: "Magic Wand",
     description:
       "Putting a modern twist on a magic trick from the turn of the century, this mesmerizing prop combines grace, elegance, illusion, and dance, leaving audiences perplexed and enchanted. The wand is truly magical; one moment Spiral spins it like a pinwheel, the next moment it's floating over her palm in space, only to fly out around her body in impossible arcs that defy logic. The LED light version of the wand is fully programmable with vibrant, customizable graphics. Stunning imagery shifts and changes to the beat of the music; displaying everything from realistic flames and dazzling geometric patterns to the birthday girl's face or company logo. The magic wand works well as a high-impact stage act, as well as ambient or walkabout entertainment.",
-    footer:
-      "Mystifying, engaging, magical; the dance of a modern-day sorceress",
+    footer: "Mystifying, engaging, magical;the dance of a modern-day sorceress",
     images: [
       { url: "/images/Magic_Wand/img_1.jpg", width: 800, height: 800 },
       { url: "/images/Magic_Wand/img_2.jpg", width: 800, height: 800 },

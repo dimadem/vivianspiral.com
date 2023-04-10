@@ -3,11 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import { BsArrowDownCircle, BsArrowUpCircle } from "react-icons/bs";
+import { BsArrowDownCircle, BsInfoCircle } from "react-icons/bs";
 import { CiSquareMore } from "react-icons/ci";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { FiInfo } from "react-icons/fi";
-import { BsInfoCircle } from "react-icons/bs";
 
 //! performance data
 import { performances } from "../public/data.js";
@@ -25,14 +23,13 @@ export default function SliderScreen() {
   // hide description
   const [openDescription, setOpenDescription] = useState(true);
   const hide = openDescription ? "hidden" : "block";
-  const bg = openDescription ? null : "bg-neutral bg-opacity-80";
 
   return (
     <>
       <NavBar>
         <div className="carousel h-full z-0 animate-fade-in-up">
           {/* 1 */}
-          <div id="slide1" className={`${bg} slide-frame`}>
+          <div id="slide1" className={` slide-frame`}>
             <Image
               src={hoopDance_bg}
               alt="hoop_dance"
@@ -40,19 +37,22 @@ export default function SliderScreen() {
               className="slide-bgImage w-fit"
             />
             <h1 className="slide-title">{performances[0].header}</h1>
-
-            <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
+            <div
+              className={`${hide} flex flex-col justify-center items-center`}
             >
-              Illusion, acrobatics, and dance combine in a contemporary take on
-              the classic hula hoop.
-              <br />
-              <br />
-              Combining elements of classic circus, modern object manipulation,
-              Native American hoop dance, and dervish-like spinning with her own
-              fierce, joyful passion, Spiral&apos;s hoop dance is unlike any
-              other.
-            </p>
+              <p
+                className={`bg-neutral bg-opacity-80 rounded-xl z-10 slide-description `}
+              >
+                Illusion, acrobatics, and dance combine in a contemporary take
+                on the classic hula hoop.
+                <br />
+                <br />
+                Combining elements of classic circus, modern object
+                manipulation, Native American hoop dance, and dervish-like
+                spinning with her own fierce, joyful passion, Spiral&apos;s hoop
+                dance is unlike any other.
+              </p>
+            </div>
 
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
@@ -83,7 +83,7 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 2 */}
-          <div id="slide2" className={`${bg} slide-frame`}>
+          <div id="slide2" className={`slide-frame`}>
             <Image
               src={magicWand_bg}
               alt="magic_wand"
@@ -91,19 +91,23 @@ export default function SliderScreen() {
               className="slide-bgImage aspect-square"
             />
             <h1 className="slide-title">{performances[1].header}</h1>
-            <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
+            <div
+              className={`${hide} flex flex-col justify-center items-center`}
             >
-              Putting a modern twist on a magic trick from the turn of the
-              century, this mesmerizing prop combines grace, elegance, illusion,
-              and dance, leaving audiences perplexed and enchanted.
-              <br />
-              <br />
-              One moment Spiral spins the wand like a pinwheel, the next moment
-              it&apos;s floating over her palm in space, only to fly out around
-              her body in impossible arcs that defy logic; the wand is truly
-              magical.
-            </p>
+              <p
+                className={`bg-neutral bg-opacity-80 rounded-xl z-10 slide-description`}
+              >
+                Putting a modern twist on a magic trick from the turn of the
+                century, this mesmerizing prop combines grace, elegance,
+                illusion, and dance, leaving audiences perplexed and enchanted.
+                <br />
+                <br />
+                One moment Spiral spins the wand like a pinwheel, the next
+                moment it&apos;s floating over her palm in space, only to fly
+                out around her body in impossible arcs that defy logic; the wand
+                is truly magical.
+              </p>
+            </div>
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
@@ -133,7 +137,7 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 3 */}
-          <div id="slide3" className={`${bg} slide-frame`}>
+          <div id="slide3" className={`slide-frame`}>
             <Image
               src={ledGlowShow_bg}
               alt="led_glow_show"
@@ -141,34 +145,29 @@ export default function SliderScreen() {
               className="slide-bgImage aspect-square"
             />
             <h1 className="slide-title">{performances[2].header}</h1>
-            <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
+            <div
+              className={`${hide} flex flex-col justify-center items-center`}
             >
-              <br />
-              <br />
-              <br />
-              <br />
-              Amazingly bright rainbow lights in a dazzling array of intricate
-              patterns, woven expertly around the body at lightning speed,
-              delighting audiences of all ages. Guests are mesmerized by a light
-              show fusing dance, acrobatics and technical showmanship.
-              <br />
-              <br />
-              Stunning imagery shifts and changes to the beat of the music;
-              displaying everything from vivid flames and dazzling patterns to
-              the birthday girl&apos;s face or company logo.
-              <br />
-              <br />
-              Spiral&apos;s LED Wand and Hula Hoops are fully programmable and
-              customizable for bespoke performances with vibrant designs and
-              photo-realistic graphics.
-            </p>
+              <p
+                className={`bg-neutral bg-opacity-80 rounded-xl z-10 slide-description`}
+              >
+                Amazingly bright rainbow lights in a dazzling array of intricate
+                patterns, woven expertly around the body at lightning speed,
+                delighting audiences of all ages. Guests are mesmerized by a
+                light show fusing dance, acrobatics and technical showmanship.
+                <br />
+                <br />
+                Stunning imagery shifts and changes to the beat of the music;
+                displaying everything from vivid flames and dazzling patterns to
+                the birthday girl&apos;s face or company logo.
+              </p>
+            </div>
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
                 {openDescription ? (
                   <button onClick={() => setOpenDescription(false)}>
-                    <BsArrowUpCircle size={32} />
+                    <BsInfoCircle size={32} />
                   </button>
                 ) : (
                   <button onClick={() => setOpenDescription(true)}>
@@ -192,7 +191,7 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 4 */}
-          <div id="slide4" className={`${bg} slide-frame`}>
+          <div id="slide4" className={`slide-frame`}>
             <Image
               src={aerialHoop_bg}
               alt="aerial_hoop"
@@ -200,19 +199,22 @@ export default function SliderScreen() {
               className="slide-bgImage"
             />
             <h1 className="slide-title">{performances[3].header}</h1>
-            <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
+            <div
+              className={`${hide} flex flex-col justify-center items-center`}
             >
-              Strength and grace combine to create beautiful cirque-style
-              performance in the air. With stunning presence, strength and
-              flexibility, Spiral dances on a steel ring, aka Aerial Hoop or
-              Lyra, elevated above the audience. Audiences are enchanted and
-              amazed as her strong, spinning dance unfolds.
-              <br />
-              <br />
-              Aerial performances embody the essential elements of circus:
-              beauty and danger.
-            </p>
+              <p
+                className={`bg-neutral bg-opacity-80 rounded-xl z-10 slide-description`}
+              >
+                Strength and grace combine to create beautiful cirque-style
+                performance in the air.
+                <br />
+                <br />
+                With stunning presence, strength and flexibility, Spiral dances
+                on a steel ring, aka Aerial Hoop or Lyra, elevated above the
+                audience. Audiences are enchanted and amazed as her strong,
+                spinning dance unfolds.
+              </p>
+            </div>
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
@@ -242,7 +244,7 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 5 */}
-          <div id="slide5" className={`${bg} slide-frame`}>
+          <div id="slide5" className={`slide-frame`}>
             <Image
               src={sphereDance_bg}
               alt="sphere_dance"
@@ -250,18 +252,23 @@ export default function SliderScreen() {
               className="slide-bgImage aspect-square"
             />
             <h1 className="slide-title">{performances[4].header}</h1>
-            <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
+            <div
+              className={`${hide} flex flex-col justify-center items-center`}
             >
-              The ball rolls across Spiral&apos;s body as if it&apos;s
-              magnetized, leaving your guests breathless. One moment it seems to
-              magically float, the next it becomes a high-powered dance partner.
-              <br />
-              <br />
-              Moving the sphere all over the body and creating beautiful shapes,
-              this unique act is infused with dance, hand balance, and rhythmic
-              gymnastics.
-            </p>
+              <p
+                className={`bg-neutral bg-opacity-80 rounded-xl z-10 slide-description`}
+              >
+                The ball rolls across Spiral&apos;s body as if it&apos;s
+                magnetized, leaving your guests breathless. One moment it seems
+                to magically float, the next it becomes a high-powered dance
+                partner.
+                <br />
+                <br />
+                Moving the sphere all over the body and creating beautiful
+                shapes, this unique act is infused with dance, hand balance, and
+                rhythmic gymnastics.
+              </p>
+            </div>
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">
@@ -291,7 +298,7 @@ export default function SliderScreen() {
             </div>
           </div>
           {/* 6 */}
-          <div id="slide6" className={`${bg} slide-frame`}>
+          <div id="slide6" className={`slide-frame`}>
             <Image
               src={firePerformance_bg}
               alt="fire_performance"
@@ -299,21 +306,24 @@ export default function SliderScreen() {
               className="slide-bgImage w-fit"
             />
             <h1 className="slide-title">{performances[5].header}</h1>
-            <p
-              className={`${hide} z-10 slide-description flex flex-col justify-center lg:justify-end`}
+            <div
+              className={`${hide} flex flex-col justify-center items-center`}
             >
-              Fire; an element so primal, it arouses instant fascination. The
-              element of danger combined with stunning skills creates
-              high-impact performances that leave your guests in awe.
-              <br />
-              <br />
-              Spiral has been dancing with Fire for over 15 years and is an
-              expert performer of this mesmerizing, elemental art form.
-              <br />
-              <br />
-              Delighting at the enchanting interplay of risk and technique, her
-              fire performances are one of a kind.
-            </p>
+              <p
+                className={`bg-neutral bg-opacity-80 rounded-xl z-10 slide-description`}
+              >
+                Fire; an element so primal, it arouses instant fascination.
+                Combining the element of danger with stunning skills, Spiral
+                creates high-impact fire performances that leave your guests in
+                awe.
+                <br />
+                <br />
+                With over 15 years of experience dancing with fire, Spiral is an
+                expert performer in this mesmerizing, elemental art form.
+                Delighting at the enchanting interplay of risk and technique,
+                her fire performances are one of a kind.
+              </p>
+            </div>
             {/* SHOW / HIDE Description */}
             <div className="flex flex-col items-center w-full p-4 z-10">
               <div className="flex flex-row w-full justify-evenly p-5">

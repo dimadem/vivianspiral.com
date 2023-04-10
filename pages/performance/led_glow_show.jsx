@@ -11,9 +11,9 @@ export default function led_glow_show(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center lg:p-10 p-4">
           <h1 className="text-primary-focus">{performances[2].header}</h1>
-          <h4 className="text-neutral-content normal-case">
+          <p className="text-neutral-content normal-case">
             {performances[2].footer}
-          </h4>
+          </p>
         </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[2].images.map((image, index) => (
@@ -38,21 +38,14 @@ export default function led_glow_show(params) {
               Amazingly bright rainbow lights in a dazzling array of intricate
               patterns, woven expertly around the body at lightning speed,
               delighting audiences of all ages. Guests are mesmerized by a light
-              show fusing dance, acrobatics,
-              <span className="text-neutral-content">
-                {" "}
-                musicality, and technical showmanship presenting a powerful
-                display of dazzling lights in a range of props.
-              </span>
+              show fusing dance, acrobatics, musicality, and technical
+              showmanship presenting a powerful display of dazzling lights in a
+              range of props.
               <br />
               <br />
               Spiral&apos;s LED Wand and Hula Hoops are fully programmable and
-              customizable,
-              <span className="text-neutral-content">
-                {" "}
-                able to create truly unique, bespoke performances using vibrant
-                designs and photo-realistic graphics.
-              </span>
+              customizable, able to create truly unique, bespoke performances
+              using vibrant designs and photo-realistic graphics.
               <br />
               <br />
               Stunning imagery shifts and changes to the beat of the music;
@@ -65,36 +58,22 @@ export default function led_glow_show(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              <span className="text-neutral-content">
-                {" "}
-                Spiral performs programmable LED versions of Wand and Hoops, as
-                well as atmospheric LED contact juggling. For LED performance,
-                relative darkness in the staging area will yield the most
-                vibrant light show.
-              </span>
+              Spiral performs programmable LED versions of Wand and Hoops, as
+              well as atmospheric LED contact juggling. For LED performance,
+              relative darkness in the staging area will yield the most vibrant
+              light show.
               <br />
               <br />
-              <span className="text-neutral-content">
-                {" "}
-                &apos;Spellcasting&apos; LED Wand Act- 4:24 minutes
-              </span>{" "}
-              <br />
-              &apos;Ignition&apos; LED Hoop Dance Act- 4:43 minutes
+              &apos;Spellcasting&apos; LED Wand Act- 4:24 minutes <br />
+              &apos;Ignition&apos; LED Hoop Dance Act- 4:43 minutes <br />
               <br />
               <br />
-              <span className="text-neutral-content">
-                LED Glow Shows combine different skills for performances ranging
-                from 10-20 minutes. Ambient, walk-around entertainment sets up
-                to 20 minutes.
-              </span>
+              LED Glow Shows combine different skills for performances ranging
+              from 10-20 minutes. Ambient, walk-around entertainment sets up to
+              20 minutes.
               <br />
-              <br />
-              <span className="text-neutral-content">
-                {" "}
-                LED Stage acts require a minimum of 3.5 x 3.5 x 3.5
-                meters/10&apos;x10&apos;x10&apos; feet.
-              </span>
-              <br />
+              LED Stage acts require a minimum of 3.5 x 3.5 x 3.5
+              meters/10&apos;x10&apos;x10&apos; feet. <br />
               Ambient performance can occur in smaller spaces.
             </p>
           </div>

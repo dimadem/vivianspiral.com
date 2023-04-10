@@ -123,7 +123,7 @@ const AboutmeData = () => {
       <div className="bg-center bg-fixed bg-no-repeat bg-bg_image">
         {/* ABOUT ME */}
         <div className="ml-auto bg-neutral bg-opacity-60 h-fit w-full lg:w-1/2 flex flex-col justify-around font-spectralHeader text-xl animate-fade-in-down p-2 lg:mt-4 mt-2">
-          <div className="pt-10 lg:ml-auto lg:mr-4 lg:text-justify lg:w-full h-fit sm:w-full text-justify ">
+          <div className="pt-10 lg:ml-auto lg:mr-4 lg:text-justify lg:w-full h-fit sm:w-full text-justify text-neutral-content">
             Emanating an electric presence for groups of 20 or 20,000, Spiral
             has wowed audiences all over the globe with her unique movement
             style and commanding stage presence. An artist on the cutting edge
@@ -131,20 +131,20 @@ const AboutmeData = () => {
             grace she brings to the stage.
           </div>
           <div className="divider"></div>
-          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-neutral-content bg-opacity-60">
+          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-white bg-opacity-60">
             A powerhouse performer in a wide variety of disciplines, Spiral
             delivers elegant entertainment that leaves your guests amazed,
             inspired, and delighted; making your event absolutely unforgettable.
           </div>
           <div className="divider"></div>
-          <div className="lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify">
+          <div className="lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-neutral-content">
             Stunning on stage, Spiral&apos;s unique and powerful acts create
             magic for any audience. As roaming, interactive entertainment,
             Spiral&apos;s skillfully wielded hoops, magic wand, and acrobatic
             sphere dance make for exciting, pop-up, improvised performance.
           </div>
           <div className="divider"></div>
-          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-neutral-content bg-opacity-70">
+          <div className="p-1 rounded-sm lg:ml-auto lg:mr-4 lg:w-full lg:text-justify h-fit sm:w-full text-justify text-primary-content bg-white bg-opacity-60">
             Her talents have mesmerized audiences at events for Cirque du
             Soleil, the New York Academy of Art, NASA, Google, The Human Rights
             Campaign, Polo Ralph Lauren, The American Medical Association,

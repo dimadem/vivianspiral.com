@@ -11,9 +11,9 @@ export default function aerial_hoop(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center lg:p-10 p-4">
           <h1 className="text-primary-focus">{performances[3].header}</h1>
-          <h4 className="text-neutral-content normal-case">
+          <p className="text-neutral-content normal-case">
             {performances[3].footer}
-          </h4>
+          </p>
         </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[3].images.map((image, index) => (

@@ -11,9 +11,9 @@ export default function hoop_dance(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center p-4 lg:p-10">
           <h1 className="text-primary-focus">{performances[0].header}</h1>
-          <h4 className="text-neutral-content normal-case">
+          <p className="text-neutral-content normal-case">
             {performances[0].footer}
-          </h4>
+          </p>
         </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[0].images.map((image, index) => (

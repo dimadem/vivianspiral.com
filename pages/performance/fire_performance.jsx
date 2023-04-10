@@ -11,9 +11,9 @@ export default function fire_performance(params) {
       <div className="w-full h-fit p-2">
         <div className="w-full text-center lg:p-10 p-4">
           <h1 className="text-primary-focus">{performances[5].header}</h1>
-          <h4 className="text-neutral-content normal-case">
+          <p className="text-neutral-content normal-case">
             {performances[5].footer}
-          </h4>
+          </p>
         </div>
         <div className="carousel carousel-center rounded-box gap-5">
           {performances[5].images.map((image, index) => (
@@ -34,7 +34,19 @@ export default function fire_performance(params) {
               DESCRIPTION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              <Link href={"https://youtu.be/ltxjWgqRKDs"} title="_blank">
+              Fire; an element so primal, it arouses instant fascination.
+              Combining the element of danger with stunning skills, Spiral
+              creates high-impact performances that will leave your guests in
+              awe.
+              <br />
+              <br />
+              With over 15 years of experience dancing with fire, Spiral is an
+              expert performer of this mesmerizing, elemental art form.
+              Delighting at the enchanting interplay of risk and technique, her
+              fire performances are one of a kind.
+              <br />
+              <br />
+              <Link href={"https://youtu.be/ltxjWgqRKDs"} target="_blank">
                 <span className="text-neutral-content">
                   See Spiral perform at the European Juggling Convention Fire
                   Gala in Lublin, Poland.
@@ -54,9 +66,10 @@ export default function fire_performance(params) {
                 <br />
                 <br />
                 Fire shows range from 3-17 minutes. Fire shows require a minimum
-                of 3.5 x 3.5 x 3.5 meters/10&apos;x10&apos;x10&apos; feet and a
-                dedicated fire safety assistant. Client is responsible for all
-                required permits.
+                of 3.5 x 3.5 x 3.5 <br />
+                meters/10&apos;x10&apos;x10&apos; feet and a dedicated fire
+                safety assistant. <br />
+                Client is responsible for all required permits.
                 <br />
                 <br />
                 Spiral is fully covered by professional liability insurance for
