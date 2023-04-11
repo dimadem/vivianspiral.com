@@ -59,23 +59,17 @@ export default function hoop_dance(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              <span className="text-neutral-content">&apos;Cycles&apos;</span>{" "}
-              Contemporary Hoop Dance Act- 5:36 minutes &apos;Ignition&apos; LED
-              Hoop Dance Act- 4:43 minutes
+              &apos;Cycles&apos; Contemporary Hoop Dance Act- 5:36 minutes
+              &apos;Ignition&apos; LED Hoop Dance Act- 4:43 minutes
               <br />
               <br />
               Hoop Dance can be combined with other acts to create longer shows
               between 10-25 minutes.
               <br />
               <br />
-              <span className="text-neutral-content">
-                Hoop Dance Stage acts require
-              </span>{" "}
-              a minimum of 3.5 x 3.5 x 3.5 meters/10&apos;x10&apos;x10&apos;
-              feet. Band or DJ accompaniment and Walkabout performances{" "}
-              <span className="text-neutral-content">
-                can occur in smaller spaces.
-              </span>
+              Hoop Dance Stage acts require a minimum of 3.5 x 3.5 x 3.5
+              meters/10&apos;x10&apos;x10&apos; feet. Band or DJ accompaniment
+              and Walkabout performances can occur in smaller spaces.
             </p>
           </div>
         </div>

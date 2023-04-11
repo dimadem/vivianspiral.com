@@ -59,22 +59,20 @@ export default function fire_performance(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
-              <span className="text-neutral-content">
-                Spiral performs with Fire Hoops, Wand, Candles, and Skirt. For
-                Fire shows, relative darkness in the performance area will yield
-                the most vibrant flames.
-                <br />
-                <br />
-                Fire shows range from 3-17 minutes. Fire shows require a minimum
-                of 3.5 x 3.5 x 3.5 <br />
-                meters/10&apos;x10&apos;x10&apos; feet and a dedicated fire
-                safety assistant. <br />
-                Client is responsible for all required permits.
-                <br />
-                <br />
-                Spiral is fully covered by professional liability insurance for
-                all performances, including fire.
-              </span>
+              Spiral performs with Fire Hoops, Wand, Candles, and Skirt. For
+              Fire shows, relative darkness in the performance area will yield
+              the most vibrant flames.
+              <br />
+              <br />
+              Fire shows range from 3-17 minutes. Fire shows require a minimum
+              of 3.5 x 3.5 x 3.5 <br />
+              meters/10&apos;x10&apos;x10&apos; feet and a dedicated fire safety
+              assistant. <br />
+              Client is responsible for all required permits.
+              <br />
+              <br />
+              Spiral is fully covered by professional liability insurance for
+              all performances, including fire.
             </p>
           </div>
         </div>
