@@ -103,8 +103,8 @@ export const performances = [
     footer: "Elegant dance suspended in space",
     images: [
       { url: "/images/Aerial_Hoop/img_1.jpg", width: 800, height: 800 },
-      { url: "/images/Aerial_Hoop/img_2.jpg", width: 800, height: 800 },
-      { url: "/images/Aerial_Hoop/img_3.webp", width: 800, height: 800 },
+      { url: "/images/Aerial_Hoop/img_2.webp", width: 800, height: 800 },
+      { url: "/images/Aerial_Hoop/img_3.jpg", width: 800, height: 800 },
       { url: "/images/Aerial_Hoop/img_4.jpg", width: 800, height: 800 },
       { url: "/images/Aerial_Hoop/img_5.jpg", width: 800, height: 800 },
       { url: "/images/Aerial_Hoop/img_6.jpg", width: 800, height: 800 },
