@@ -1,6 +1,6 @@
 import { BsFacebook, BsInstagram, BsYoutube } from "react-icons/bs";
 import Link from "next/link";
-import logo from "../public/netart_logo.svg";
+import logo from "../public/netart_cube_logo.svg";
 import Image from "next/image";
 
 export default function Footer(params) {

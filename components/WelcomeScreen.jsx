@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SoundButtons from "./ui/SoundButtons";
+// import SoundButtons from "./ui/SoundButtons";
 
 export default function WelcomeScreen({ useSetIsLoading }) {
   const [first, setFirst] = useState("");
@@ -20,7 +20,7 @@ export default function WelcomeScreen({ useSetIsLoading }) {
       >
         skip
       </button>
-      <div className="mt-44 h-full">
+      <div className="mt-44 h-full select-none">
         <h1
           className={`uppercase font-spectralHeader text-center animate-fade-in-up ${first}`}
         >
