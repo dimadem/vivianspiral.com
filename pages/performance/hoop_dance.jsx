@@ -59,6 +59,14 @@ export default function hoop_dance(params) {
               TECHNICAL INFORMATION
             </h3>
             <p className="text-primary-focus font-montagaText">
+              Hoop Dance is a perfect fit for stage performance, live music
+              accompaniment, or walk-about entertainment.
+              <br />
+              <br />
+              Fire and LED Hoop versions are available. LED Hoops can be
+              programmed with custom graphics to create bespoke light shows.
+              <br />
+              <br />
               &apos;Cycles&apos; Contemporary Hoop Dance Act- 5:36 minutes
               &apos;Ignition&apos; LED Hoop Dance Act- 4:43 minutes
               <br />
