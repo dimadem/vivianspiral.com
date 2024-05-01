@@ -88,7 +88,10 @@ export default function NavBar({ children }) {
                 <div className="tooltip tooltip-bottom" data-tip="Send E-mail">
                   <Link
                     href="mailto:info@vivianspiral.com"
-                    target="_blank"
+                    onClick={() => {
+                      navigator.clipboard.writeText("info@vivianspiral.com");
+                      alert("Email copied to clipboard");
+                    }}
                     className="btn btn-ghost"
                   >
                     <BsEnvelope size={25} />
